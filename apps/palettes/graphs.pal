@@ -1,0 +1,12 @@
+<!Mica-FormattedFile ViewManager = com.swfm.mica.MiPaletteViewManager>
+
+name = Graphs, type = palette, backgroundColor = lightgreen, Expand=true
+name = Star, type = StarTemplate, container = Graphs
+name = Tree, type = TreeTemplate, container = Graphs
+name = Outline, type = OutlineTemplate, container = Graphs
+name = Ring, type = RingTemplate, container = Graphs
+name = Line, type = LineGraphTemplate, container = Graphs
+name = 2DMesh, type = 2DMeshTemplate, container = Graphs
+name = CrossBar, type = CrossBarTemplate, container = Graphs
+name = Omega, type = OmegaTemplate, container = Graphs
+

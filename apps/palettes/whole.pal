@@ -1,0 +1,32 @@
+<!Mica-FormattedFile ViewManager = com.swfm.mica.MiPaletteViewManager>
+
+name = Icons, type = palette, backgroundColor = lightgreen, Expand=true
+name = red-ball, type = image, value = ${Mi_HOME}/apps/images/red-ball.gif, container = Icons
+name = blue-ball, type = image, value = ${Mi_HOME}/apps/images/blue-ball.gif, container = Icons
+name = green-ball, type = image, value = ${Mi_HOME}/apps/images/green-ball.gif, container = Icons
+name = magenta-ball, type = image, value = ${Mi_HOME}/apps/images/magenta-ball.gif, container = Icons
+name = yellow-ball, type = image, value = ${Mi_HOME}/apps/images/yellow-ball.gif, container = Icons
+name = cyan-ball, type = image, value = ${Mi_HOME}/apps/images/cyan-ball.gif, container = Icons
+name = computer, type = image, value = ${Mi_HOME}/apps/images/computer.gif, container = Icons
+
+name = Nodes, type = palette, backgroundColor = lightgreen, Expand=true
+name = ttype2, type = node, value = node, decoration = PlaceHolder, container = Nodes, editable = true
+name = ttype3, type = node, value = node, decoration = PlaceHolder, imageLocation = toLeft, container = Nodes, editable = true
+name = ttype4, type = node, value = node, decoration = PlaceHolder, imageInsideBox = true, container = Nodes, editable = true
+name = ttype5, type = node, value = node, decoration = PlaceHolder, imageLocation = toLeft, imageInsideBox = true, container = Nodes, editable = true
+
+name = Graphs, type = palette, Expand=true
+name = Star, type = StarTemplate, container = Graphs
+name = Tree, type = TreeTemplate, container = Graphs
+name = Outline, type = OutlineTemplate, container = Graphs
+name = Ring, type = RingTemplate, container = Graphs
+name = Line, type = LineGraphTemplate, container = Graphs
+name = 2DMesh, type = 2DMeshTemplate, container = Graphs
+name = CrossBar, type = CrossBarTemplate, container = Graphs
+name = Omega, type = OmegaTemplate, container = Graphs
+
+name = Layouts, type = palette, Expand=true
+name = Row, type = RowTemplate, container = Layouts
+name = Column, type = ColumnTemplate, container = Layouts
+name = Grid, type = GridTemplate, container = Layouts
+

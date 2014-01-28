@@ -1,0 +1,36 @@
+#define leftJustified_chars_per_pixel 1
+#define leftJustified_format 1
+#define leftJustified_height 24
+#define leftJustified_width 24
+#define leftJustified_ncolors 3
+static char * leftJustified_colors[] = {
+"+", "none",
+"a", "black",
+"b", "cyan",
+};
+static char * leftJustified_pixels[] = {
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++aaaaaaaaaa++++++++++++",
+"++aaaaaaaaaa++++++++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++aaaaaaaaaaaaaaaaaaaa++",
+"++aaaaaaaaaaaaaaaaaaaa++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++aaaaaaaaaaaaaaaa++++++",
+"++aaaaaaaaaaaaaaaa++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++aaaaaaa+++++++++++++++",
+"++aaaaaaa+++++++++++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+};

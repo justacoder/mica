@@ -1,0 +1,36 @@
+#define pageVisibility_chars_per_pixel 1
+#define pageVisibility_format 1
+#define pageVisibility_height 24
+#define pageVisibility_width 24
+#define pageVisibility_ncolors 3
+static char * pageVisibility_colors[] = {
+"+", "white",
+"a", "black",
+"b", "none",
+};
+static char * pageVisibility_pixels[] = {
+"bbbbbbbbbbbbbbbbbbbbbbbb",
+"bbbbbbbbbbbbbbbbbbbbbbbb",
+"bbaaaaaaaaaaaaaabbbbbbbb",
+"bba++++++++++++aabbbbbbb",
+"bba++++++++++++aaabbbbbb",
+"bba++++++++++++aaaabbbbb",
+"bba++++++++++++aaaaabbbb",
+"bba++++++++++++aaaaaabbb",
+"bba++++++++++++aaaaaaabb",
+"bba++++++++++++++++++abb",
+"bba++++++++++++++++++abb",
+"bba++++++++++++++++++abb",
+"bba++++++++++++++++++abb",
+"bba++++++++++++++++++abb",
+"bba++++++++++++++++++abb",
+"bba++++++++++++++++++abb",
+"bba++++++++++++++++++abb",
+"bba++++++++++++++++++abb",
+"bba++++++++++++++++++abb",
+"bba++++++++++++++++++abb",
+"bba++++++++++++++++++abb",
+"bbaaaaaaaaaaaaaaaaaaaabb",
+"bbbbbbbbbbbbbbbbbbbbbbbb",
+"bbbbbbbbbbbbbbbbbbbbbbbb",
+};

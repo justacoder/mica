@@ -1,0 +1,36 @@
+#define connectArc_chars_per_pixel 1
+#define connectArc_format 1
+#define connectArc_height 24
+#define connectArc_width 24
+#define connectArc_ncolors 3
+static char * connectArc_colors[] = {
+"+", "white",
+"a", "black",
+"b", "none",
+};
+static char * connectArc_pixels[] = {
+"bbbbbbbbbbbbbbbbbbbbbbbb",
+"bbbbbbbbbbbbbbbbbbbbbbbb",
+"bbbbbbbbbbbbbbbbbaaaaabb",
+"bbbbbbbbbbbbbbbbba+++abb",
+"bbbbbbbbbbbbbaaaaa+++abb",
+"bbbbbbbbbbbaabbbba+++abb",
+"bbbbbbbbbaabbbbbbaaaaabb",
+"bbbbbbbbaabbbbbbbbbbbbbb",
+"bbbbbbbaabbbbbbbbbbbbbbb",
+"bbbbbbaabbbbbbbbbbbbbbbb",
+"bbbbbbabbbbbbbbbbbbbbbbb",
+"bbbbbaabbbbbbbbbbbbbbbbb",
+"bbbbbabbbbbbbbbbbbbbbbbb",
+"bbbbbabbbbbbbbbbbbbbbbbb",
+"bbbbabbbbbbbbbbbbbbbbbbb",
+"bbbbabbbbbbbbbbbbbbbbbbb",
+"bbbbabbbbbbbbbbbbbbbbbbb",
+"bbaaaaabbbbbbbbbbbbbbbbb",
+"bba+++abbbbbbbbbbbbbbbbb",
+"bba+++abbbbbbbbbbbbbbbbb",
+"bba+++abbbbbbbbbbbbbbbbb",
+"bbaaaaabbbbbbbbbbbbbbbbb",
+"bbbbbbbbbbbbbbbbbbbbbbbb",
+"bbbbbbbbbbbbbbbbbbbbbbbb",
+};

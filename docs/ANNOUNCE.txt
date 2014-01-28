@@ -1,0 +1,49 @@
+
+
+===================================================
+ANNOUNCE: The Mica Graphics Framework Version 1.1 (Alpha)
+===================================================
+
+
+Software Farm, Inc. is proud to announce the availability of
+the 3rd release of Mica, a free graphics and user interface
+toolkit for Java programmers who want easy, powerful, and 
+extraordinarily graphical user interfaces for their 
+appletcations.
+
+Specifically, Mica is a modern object-oriented 2D graphics
+library with a heavy emphasis on ease of use, portability 
+and the ability to mix common user-interface widgets with
+not so common widgets and graphs.
+	
+Mica provides a host of advanced features, including:
+
+*	A large number of standard widgets (including
+	a table, tree list, and property panels)
+
+*	A large number of (node-arc) graph layouts
+
+*	Object-oriented look (every visible artifact is
+	an object) and feel (all event handling is handled
+	by event handler objects)
+
+*	Automatic layout validation and/or redraw when
+	components are changed
+
+*	A suite of appletcations including a network
+	graph editor and a diagramming tool with customizable
+	drag-and-drop palettes which reads and writes simple
+	ASCII text graphics files
+
+Mica is available on the web for general evaluation and use. 
+The source code and class files are provided free of charge.
+
+This is an alpha release for JDK 1.1 or better.
+
+Home Page:
+	http://www.swfm.com
+White Paper:
+	http://www.swfm.com/w_paper.pdf
+Email Contact:
+	mailto:info@swfm.com
+

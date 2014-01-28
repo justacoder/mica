@@ -1,0 +1,36 @@
+#define connectL_chars_per_pixel 1
+#define connectL_format 1
+#define connectL_height 24
+#define connectL_width 24
+#define connectL_ncolors 3
+static char * connectL_colors[] = {
+"+", "white",
+"a", "black",
+"b", "none",
+};
+static char * connectL_pixels[] = {
+"bbbbbbbbbbbbbbbbbbbbbbbb",
+"bbbbbbbbbbbbbbbbbbbbbbbb",
+"bbbbbbbbbbbbbbbbbaaaaabb",
+"bbbbbbbbbbbbbbbbba+++abb",
+"bbbbaaaaaaaaaaaaaa+++abb",
+"bbbbabbbbbbbbbbbba+++abb",
+"bbbbabbbbbbbbbbbbaaaaabb",
+"bbbbabbbbbbbbbbbbbbbbbbb",
+"bbbbabbbbbbbbbbbbbbbbbbb",
+"bbbbabbbbbbbbbbbbbbbbbbb",
+"bbbbabbbbbbbbbbbbbbbbbbb",
+"bbbbabbbbbbbbbbbbbbbbbbb",
+"bbbbabbbbbbbbbbbbbbbbbbb",
+"bbbbabbbbbbbbbbbbbbbbbbb",
+"bbbbabbbbbbbbbbbbbbbbbbb",
+"bbbbabbbbbbbbbbbbbbbbbbb",
+"bbbbabbbbbbbbbbbbbbbbbbb",
+"bbaaaaabbbbbbbbbbbbbbbbb",
+"bba+++abbbbbbbbbbbbbbbbb",
+"bba+++abbbbbbbbbbbbbbbbb",
+"bba+++abbbbbbbbbbbbbbbbb",
+"bbaaaaabbbbbbbbbbbbbbbbb",
+"bbbbbbbbbbbbbbbbbbbbbbbb",
+"bbbbbbbbbbbbbbbbbbbbbbbb",
+};

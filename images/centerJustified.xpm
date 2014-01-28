@@ -1,0 +1,36 @@
+#define centerJustified_chars_per_pixel 1
+#define centerJustified_format 1
+#define centerJustified_height 24
+#define centerJustified_width 24
+#define centerJustified_ncolors 3
+static char * centerJustified_colors[] = {
+"+", "none",
+"a", "black",
+"b", "cyan",
+};
+static char * centerJustified_pixels[] = {
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"+++++++aaaaaaaaaa+++++++",
+"+++++++aaaaaaaaaa+++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++aaaaaaaaaaaaaaaaaaaa++",
+"++aaaaaaaaaaaaaaaaaaaa++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++++aaaaaaaaaaaaaaaa++++",
+"++++aaaaaaaaaaaaaaaa++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"+++++++++aaaaaaa++++++++",
+"+++++++++aaaaaaa++++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+};

@@ -1,0 +1,7 @@
+<!Mica-FormattedFile ViewManager = com.swfm.mica.MiPaletteViewManager>
+
+name = Layouts, type = palette, backgroundColor = lightgreen, Expand=true
+name = Row, type = RowTemplate, container = Layouts
+name = Column, type = ColumnTemplate, container = Layouts
+name = Grid, type = GridTemplate, container = Layouts
+

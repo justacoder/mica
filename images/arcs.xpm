@@ -1,0 +1,36 @@
+#define arcs_chars_per_pixel 1
+#define arcs_format 1
+#define arcs_height 24
+#define arcs_width 24
+#define arcs_ncolors 3
+static char * arcs_colors[] = {
+"+", "none",
+"a", "black",
+"b", "cyan",
+};
+static char * arcs_pixels[] = {
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"+++++++++++++++aa+++++++",
+"+++++++++++++aabbaa+++++",
+"++++++++++++abbbbbba++++",
+"++++++++++aabbbbbbba++++",
+"+++++++++abbbbbbbbbba+++",
+"+++++++aabbbbbbbbbbba+++",
+"++++++abbbbbbbbbbbbbba++",
+"++++aabbbbbbbbbbbbbbba++",
+"++aabbbbbbbbbbbbbbbbba++",
+"++++aabbbbbbbbbbbbbbba++",
+"++++++abbbbbbbbbbbbbba++",
+"+++++++aabbbbbbbbbbba+++",
+"+++++++++abbbbbbbbbba+++",
+"++++++++++aabbbbbbba++++",
+"++++++++++++abbbbbba++++",
+"+++++++++++++aabbaa+++++",
+"+++++++++++++++aa+++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+};

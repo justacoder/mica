@@ -1,0 +1,367 @@
+
+Header
+
+	The first line of all graphics files contains the Mica graphics
+	file identifier "<!Mica-GraphicsFile" and the specification of 
+	either the file format. The file format indicates what IO manager
+	to use for reading and writing the file and what look and feel
+	manager to use to generate and interpret the drawn graphics. The
+	file format can be one of the pre-configured file formats or
+	the names of the classes that will implement the IO Manager and
+	look and feel manager responsbilities.
+
+	Headers with supported pre-configured file formats are:
+
+	<!Mica-GraphicsFile FileFormat = SimpleTreeGraphics>
+	<!Mica-GraphicsFile FileFormat = PaletteGraphics>
+	<!Mica-GraphicsFile FileFormat = EditorGraphics>
+
+	These are equivalent to the headers:
+
+	<!Mica-GraphicsFile IOManager = com.swfm.mica.MiSimpleDocumentIOManager, LookAndFeelManager =  com.swfm.mica.MiSimpleTreeLookAndFeelManager>
+	<!Mica-GraphicsFile IOManager = com.swfm.mica.MiSimpleDocumentIOManager, LookAndFeelManager =  com.swfm.mica.MiGraphicsPaletteLookAndFeelManager>
+	<!Mica-GraphicsFile IOManager = com.swfm.mica.MiSimpleDocumentIOManager, LookAndFeelManager =  com.swfm.mica.MiGraphicsEditorLookAndFeelManager>
+
+Comments
+
+	Comments are lines that start with '#' or '!' and can contain
+	any other following characters.
+
+Contents
+
+	Each line of the file specifies an object and it's attributes
+	using name/value pairs (i.e. a sequence of 
+	<attribute name> = <attribute value> pairs).
+	The exact interpretation of the object depends on the look and
+	feel manager.
+
+	The current look and feel managers all support a few basic
+	attributes:
+
+		name	- the name of the object
+	
+	The MiGraphicsPaletteLookAndFeelManager and MiGraphicsEditorLookAndFeelManager
+
+	These look and feel managers support a wealth of attributes:
+
+	name		the name of the object. The name of an object must
+			be unique within the file. It is used to reference
+			the object.
+
+	value		the text displayed by a node or text or widget object
+
+	container	the name of the container of the object (by default 
+			it will be the editor itself or palette itself)
+
+	layout		the name of the layout object assigned to this object
+			or the name of a layout (for example 'grid').
+
+	attributes	the name of the attributes object assigned to this
+			object. If an attributes object is assigned the 
+			values of any other attributes are applied _after_ 
+			the attribute object.
+
+	semantics	the name of the semantics object assigned to this 
+			object. This is useful when the semantics attributes
+			would otherwise overlap the name space of the graphics 
+			object's attributes.
+
+	type		the type of the object. The default type is 
+			'node'. Possible types are:
+
+			Document	This type of object represents the file
+					as a whole. Only one of these objects should
+					exist in a file at a time. It has the special
+					attributes:
+
+					title
+					readOnly
+					viewOnly
+					creationDate
+					creationDate
+					modificationDate
+					ignoreCase
+
+			Node		This type of object represents a node
+					in a graph. It has the appearance of
+					an optional icon attached to an optional
+					text string. It has the special attributes:
+
+					image
+					imageLocation
+					editable
+					value
+					imageInsideBox
+					
+			Palette		This type of object represents a palette
+					'folder'. Folders can be contained in other
+					folders by using the 'container' attribute.
+					It has the special attributes:
+
+					expanded	true		true or false
+
+			Container	This type of object is just a container of
+					other objects.
+
+			Connection	This type of object represents a connection
+					(i.e. line) in a graph. It has the special 
+					attributes:
+
+					source		null		the name of a
+									object.
+					destination	null		the name of a
+									object.
+
+			Editor		This type of object represents the editor
+					as a whole. Only one of these objects should
+					exist in a file at a time.
+
+			Attributes	This type of object represents a collection
+					of graphical attributes. It can be referenced
+					by other objects so that groups of objects 
+					can have the same attributes.
+
+			Semantics	This type of object represents a collection
+					of name/value pairs that are application
+					domain specific. These are ignored by the
+					look and feel manager excepting that when
+					a graphics object which has semantics is 
+					copied, the copy will refer to the same 
+					semantics
+
+			Layout		This type of object represents a layout.
+					It has the special attributes:
+
+					alleySpacing		2	any number > 0
+					alleyHSpacing		2	any number > 0
+					alleyVSpacing		2	any number > 0
+					insetMargins		0	any number > 0
+					margins			0	any number > 0
+					orientation		-	horizontal
+									vertical
+
+					hJustificationa		centerJustified
+									leftJustified
+									rightJustified
+									centerJustified
+									justified
+					vJustificationa		centerJustified
+									topJustified
+									bottomJustified
+									centerJustified
+									justified
+					hSizing			-
+									sameSize
+									expandToFill
+					vSizing			-
+									sameSize
+									expandToFill
+
+
+
+		plus the following graphics primitives:
+		
+			Rectangle
+			RoundRectangle
+			Polygon
+			RegularPolygon
+			Circle
+			Ellipse
+			Line
+			Image
+			Text
+			Triangle
+
+		plus the following editable graphics layout templates:
+		(see above description of layout objects for a list
+		of layout-specific attributes)
+
+			Row
+			Column
+			Grid
+			Star
+			Undirected
+			Outline
+			Tree
+			Ring
+			2DMesh
+			Line
+			Crossbar
+			Omega
+
+		plus any class that is a Mica graphics part (MiPart)
+		for example:
+
+			com.swfm.mica.MiPushButton
+
+	In addition graphics objects support the following attributes:
+	(spaces in names are optional)
+
+	NAME			DEFAULT VALUE		POSSIBLE VALUES
+	----------------	-------------		------------------
+	background image	null			the name of a file containing a 
+							GIF, JPG or XPM image
+
+	background tile		null			the name of a file containing a
+							GIF, JPG or XPM image
+
+	font
+
+	tool hint		null			any text string
+	balloon help		null			any text string
+	status help		null			any text string
+	dialog help		null			any text string
+
+	
+	color			black			the hexidecimal rgb value of a color
+       							(i.e. "0xff0000" or "#ff0000") or
+							the name of mica-supported color:
+							black
+							darkGray
+							gray
+							lightGray
+							veryLightGray
+							veryVeryLightGray
+							veryDarkWhite
+							darkWhite
+							white
+							darkgreen
+							darkgreen0
+							green
+							darkYellow
+							yellow
+							darkBlue
+							blue
+							lightBlue
+							veryLightBlue
+							veryVeryLightBlue
+							darkCyan
+							cyan
+							lightCyan
+							purple
+							lightPurple
+							violet
+							magenta
+							pink
+							lightPink
+							veryDarkBrown
+							darkBrown
+							brown
+							lightBrown
+							red
+							orange
+
+	background color	transparent		"
+	light color		darkWhite		"
+	white color		white			"
+	dark color		gray			"
+	black color		darkGray		"
+	border hilite color	black			"
+	shadow color		lightGray		"
+
+	fontName		Courier			Any valid java font name
+	fontSize		12			Any positive number
+	fontBold		false			true or false
+	fontItalic		false			true or false
+	fontUnderlined		false			true or false
+	fontStrikeout		false			true or false
+
+	borderLook		None			Any one of:
+							Flat
+							Raised
+							Indented
+							Groove
+							Ridge
+							RaisedOutline
+							IndentedOutline
+							RaisedInline
+							IndentedInline
+							RaisedSquared
+
+	line style		solid			Any one of:
+							solid
+							dashed
+							doubleDashed
+
+	line start style	None			Any one of:
+	line end style					FilledTriangle
+							ThinArrow
+							ThickArrow
+							FilledCircle
+							FilledSquare
+							TriangleVia
+							FilledTriangleVia
+							CicleVia
+							FilledCircleVia
+							SquareVia
+							FilledSquareVia
+							Triangle
+							Circle
+							Square
+							Diamond
+							FilledDiamond
+							3Feather
+							2Feather
+	write mode		replace
+							replace
+							xor
+
+	custom cursor		DefaultCursor		DefaultCursor
+				 			CrossHairCursor
+				 			TextCursor
+				 			WaitCursor
+						 	SWResizeCursor
+						 	SEResizeCursor
+							NWResizeCursor
+						 	NEResizeCursor
+				 			NResizeCursor
+				 			SResizeCursor
+				 			WResizeCursor
+							EResizeCursor
+							HandCursor
+							MoveCursor
+
+	shadow direction	lowerRight		lowerLeft
+							lowerRight
+							upperLeft
+							upperRight
+
+	minimum width		0			a number >= 0
+	minimum height		0			a number >= 0
+	maximum width		1.79e+308/2		a number >= 0
+	maximum height		1.79e+308/2		a number >= 0
+
+	border hilite width	2			a number >= 0
+	shadow length		4			a number >= 0
+	line width		0			a number >= 0
+	line start size		10			a number >= 0
+	line end size		10			a number >= 0
+
+	deletable		true			true or false
+	movable			true			true or false
+	copyable		true			true or false
+	selectable		true			true or false
+	fixed width		false			true or false
+	fixed height		false			true or false
+	fixed aspect ratio	false			true or false
+	pickable		true			true or false
+	ungroupable		true			true or false
+	connectable		true			true or false
+	hidden			false			true or false
+	drag-and-drop source	false			true or false
+	drag-and-drop target	false			true or false
+	accepts mouse focus	false			true or false
+	accepts keyboard focus	false			true or false
+	accepts enter key focus	false			true or false
+	accepts tab keys	true			true or false
+	has border hilite	false			true or false
+	has shadow		false			true or false
+	line ends size function of line width	true	true or false
+
+	name			null			any text string
+	x			0			any number
+	y			0			any number
+	width			-			any number > 0
+	height			-			any number > 0
+
+	

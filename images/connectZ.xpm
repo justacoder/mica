@@ -1,0 +1,36 @@
+#define connectZ_chars_per_pixel 1
+#define connectZ_format 1
+#define connectZ_height 24
+#define connectZ_width 24
+#define connectZ_ncolors 3
+static char * connectZ_colors[] = {
+"+", "white",
+"a", "black",
+"b", "none",
+};
+static char * connectZ_pixels[] = {
+"bbbbbbbbbbbbbbbbbbbbbbbb",
+"bbbbbbbbbbbbbbbbbbbbbbbb",
+"bbbbbbbbbbbbbbbbbaaaaabb",
+"bbbbbbbbbbbbbbbbba+++abb",
+"bbbbbbbbbbbaaaaaaa+++abb",
+"bbbbbbbbbbbabbbbba+++abb",
+"bbbbbbbbbbbabbbbbaaaaabb",
+"bbbbbbbbbbbabbbbbbbbbbbb",
+"bbbbbbbbbbbabbbbbbbbbbbb",
+"bbbbbbbbbbbabbbbbbbbbbbb",
+"bbbbbbbbbbbabbbbbbbbbbbb",
+"bbbbbbbbbbbabbbbbbbbbbbb",
+"bbbbbbbbbbbabbbbbbbbbbbb",
+"bbbbbbbbbbbabbbbbbbbbbbb",
+"bbbbbbbbbbbabbbbbbbbbbbb",
+"bbbbbbbbbbbabbbbbbbbbbbb",
+"bbbbbbbbbbbabbbbbbbbbbbb",
+"bbaaaaabbbbabbbbbbbbbbbb",
+"bba+++abbbbabbbbbbbbbbbb",
+"bba+++aaaaaabbbbbbbbbbbb",
+"bba+++abbbbbbbbbbbbbbbbb",
+"bbaaaaabbbbbbbbbbbbbbbbb",
+"bbbbbbbbbbbbbbbbbbbbbbbb",
+"bbbbbbbbbbbbbbbbbbbbbbbb",
+};

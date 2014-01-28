@@ -1,0 +1,36 @@
+#define justified_chars_per_pixel 1
+#define justified_format 1
+#define justified_height 24
+#define justified_width 24
+#define justified_ncolors 3
+static char * justified_colors[] = {
+"+", "none",
+"a", "black",
+"b", "cyan",
+};
+static char * justified_pixels[] = {
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++aa+++aa++aa+++aa++aa++",
+"++aa+++aa++aa+++aa++aa++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++aaaaaaaaaaaaaaaaaaaa++",
+"++aaaaaaaaaaaaaaaaaaaa++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++aaaa+++aaaaa++aaaaaa++",
+"++aaaa+++aaaaa++aaaaaa++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++a+++a++a++a++a++a++a++",
+"++a+++a++a++a++a++a++a++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+};

@@ -1,0 +1,36 @@
+#define gridPointVisibility_chars_per_pixel 1
+#define gridPointVisibility_format 1
+#define gridPointVisibility_height 24
+#define gridPointVisibility_width 24
+#define gridPointVisibility_ncolors 3
+static char * gridPointVisibility_colors[] = {
+"+", "white",
+"a", "black",
+"b", "none",
+};
+static char * gridPointVisibility_pixels[] = {
+"bbbbbbbbbbbbbbbbbbbbbbbb",
+"bbbbbbbbbbbbbbbbbbbbbbbb",
+"bbaaaaaaaaaaaaaaaaaaaabb",
+"bba++++++++++++++++++abb",
+"bba++++++++++++++++++abb",
+"bba++aa++aa++aa++aa++abb",
+"bba++aa++aa++aa++aa++abb",
+"bba++++++++++++++++++abb",
+"bba++++++++++++++++++abb",
+"bba++aa++aa++aa++aa++abb",
+"bba++aa++aa++aa++aa++abb",
+"bba++++++++++++++++++abb",
+"bba++++++++++++++++++abb",
+"bba++aa++aa++aa++aa++abb",
+"bba++aa++aa++aa++aa++abb",
+"bba++++++++++++++++++abb",
+"bba++++++++++++++++++abb",
+"bba++aa++aa++aa++aa++abb",
+"bba++aa++aa++aa++aa++abb",
+"bba++++++++++++++++++abb",
+"bba++++++++++++++++++abb",
+"bbaaaaaaaaaaaaaaaaaaaabb",
+"bbbbbbbbbbbbbbbbbbbbbbbb",
+"bbbbbbbbbbbbbbbbbbbbbbbb",
+};

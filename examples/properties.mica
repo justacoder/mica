@@ -1,0 +1,5 @@
+Mi_IMAGES_HOME 	= ${Mi_HOME}/images
+
+#MiPushButton.backgroundColor = red
+#MiPushButton.mouseFocus.backgroundColor = blue
+#MiPushButton.selected.backgroundColor = green

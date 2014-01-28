@@ -1,0 +1,36 @@
+#define ellipses_chars_per_pixel 1
+#define ellipses_format 1
+#define ellipses_height 24
+#define ellipses_width 24
+#define ellipses_ncolors 3
+static char * ellipses_colors[] = {
+"+", "none",
+"a", "black",
+"b", "cyan",
+};
+static char * ellipses_pixels[] = {
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++++++++++aaaaa+++++++++",
+"++++++++aabbbbbaa+++++++",
+"+++++aaabbbbbbbbbaaa++++",
+"++++aabbbbbbbbbbbbbaa+++",
+"+++aabbbbbbbbbbbbbbbaa++",
+"+++abbbbbbbbbbbbbbbbba++",
+"+++aabbbbbbbbbbbbbbbaa++",
+"++++aabbbbbbbbbbbbbaa+++",
+"+++++aaabbbbbbbbbaaa++++",
+"++++++++aabbbbbaa+++++++",
+"++++++++++aaaaa+++++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+};

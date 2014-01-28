@@ -1,0 +1,23 @@
+#define checkMark_chars_per_pixel 1
+#define checkMark_format 1
+#define checkMark_height 12
+#define checkMark_width 12
+#define checkMark_ncolors 2
+static char * checkMark_colors[] = {
+"+", "none",
+"a", "black",
+};
+static char * checkMark_pixels[] = {
+"+++++++++++a",
+"++++++++++aa",
+"+++++++++aa+",
+"++++++++aa++",
+"+++++++aa+++",
+"++++++aaa+++",
+"aa+++aaa++++",
+"+aa+aaaa++++",
+"++aaaaa+++++",
+"+++aaaa+++++",
+"++++aaa+++++",
+"++++++++++++",
+};

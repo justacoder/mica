@@ -1,0 +1,36 @@
+#define rects_chars_per_pixel 1
+#define rects_format 1
+#define rects_height 24
+#define rects_width 24
+#define rects_ncolors 3
+static char * rects_colors[] = {
+"+", "none",
+"a", "black",
+"b", "cyan",
+};
+static char * rects_pixels[] = {
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++aaaaaaaaaaaaaaaaaaa+++",
+"++abbbbbbbbbbbbbbbbba+++",
+"++abbbbbbbbbbbbbbbbba+++",
+"++abbbbbbbbbbbbbbbbba+++",
+"++abbbbbbbbbbbbbbbbba+++",
+"++abbbbbbbbbbbbbbbbba+++",
+"++abbbbbbbbbbbbbbbbba+++",
+"++abbbbbbbbbbbbbbbbba+++",
+"++abbbbbbbbbbbbbbbbba+++",
+"++abbbbbbbbbbbbbbbbba+++",
+"++abbbbbbbbbbbbbbbbba+++",
+"++abbbbbbbbbbbbbbbbba+++",
+"++abbbbbbbbbbbbbbbbba+++",
+"++abbbbbbbbbbbbbbbbba+++",
+"++abbbbbbbbbbbbbbbbba+++",
+"++abbbbbbbbbbbbbbbbba+++",
+"++abbbbbbbbbbbbbbbbba+++",
+"++abbbbbbbbbbbbbbbbba+++",
+"++aaaaaaaaaaaaaaaaaaa+++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+};

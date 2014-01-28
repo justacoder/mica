@@ -1,0 +1,109 @@
+
+                 The Mica Graphics Framework
+
+                License Agreement and Warranty
+
+                     Software Farm, Inc.
+                      211 Highview Dr.
+                      Boulder CO 80304
+
+
+
+  PLEASE READ THIS LICENSE AGREEMENT BEFORE USING THIS SOFTWARE
+
+
+
+The short story is:
+
+*	The Software is available free for commercial and non-commercial
+	use.
+
+*	You may use, copy, modify and distribute the Software bytecode
+	and un-modified source code and documentation without paying 
+	Software Farm anything.
+
+*	You cannot distribute the source code of the Software if it has
+	been modified in any way to anyone else other than Software Farm
+	and your co-workers.
+
+*	You cannot charge money for distributing the Software.
+
+
+The full conditions for use are listed below.
+This license is an agreement between you and Software Farm. 
+
+
+1.    License Grant
+Subject to the terms set forth in this License, you may use the computer
+software: source code, bytecode, documentation, (hereafter Software")
+contained in the Mica Graphics Framework.
+
+By downloading, using or copying this Software, you agree to abide by
+the intellectual property laws, and all other applicable laws of the
+United States, and the terms of this License.
+
+a. 	You may use the Software to create applications, applets and
+	tools, for use and distribution, free of charge.
+
+b. 	You may distribute this Software to any third party in
+	unmodified (original) form.
+
+c.	You may not distribute modified Software except as bytecode
+	".class" files. Exceptions are when the Software is sent
+	to Software Farm, when distributed between the members of
+	a corporation or small group of interested parties, or when
+	a section of a source code method is widely distributed for
+	the purposes of illustrating use or repair.
+
+d.	You may not charge for distribution or redistribution of the
+	Software, original or modified, in any way except the minimal
+	costs incured, if any, by copying and shipping materials.
+
+2.      Copyright and Title
+The Software, manuals and other documentation, and its copyrights
+are owned by Software Farm and are protected by United States
+copyright laws and international treaty provisions. The Software may
+not be copied or distributed without this license agreement and copyright
+notice included on all copies in a manner which makes the agreement and
+notice  available to users prior to use. You may not copy or distribute
+the Software after receiving a notice from Software Farm terminating
+your distribution privileges.
+
+3.      Disclaimer of Warranty
+IN NO EVENT SHALL SOFTWARE FARM, CONTRIBUTORS, OR DISTRIBUTORS BE LIABLE
+TO ANY PARTY FOR DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL
+DAMAGES ARISING OUT OF THE USE OF THIS SOFTWARE AND ITS DOCUMENTATION
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+OUT OF THE USE OF THIS SOFTWARE, EVEN IF SOFTWARE FARM, CONTRIBUTORS, OR
+DISTRIBUTORS HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ 
+SOFTWARE FARM SPECIFICALLY DISCLAIMS ANY WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+PARTICULAR PURPOSE. THE SOFTWARE PROVIDED HEREUNDER IS ON AN "AS IS" BASIS,
+AND SOFTWARE FARM HAS NO OBLIGATION TO PROVIDE MAINTENANCE, SUPPORT, 
+UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
+
+SOFTWARE FARM SHALL HAVE NO LIABILITY OR RESPONSIBILITY FOR
+SOFTWARE ALTERED, MODIFIED, OR CONVERTED BY YOU OR A THIRD PARTY,
+DAMAGES RESULTING FROM ACCIDENT, ABUSE, OR MISAPPLICATION, OR FOR
+PROBLEMS DUE TO THE MALFUNCTION OF YOUR EQUIPMENT OR SOFTWARE NOT
+SUPPLIED BY SOFTWARE FARM.
+
+4.      Termination
+This License is in effect until terminated and terminates without
+notice from Software Farm if you fail to comply with any of
+its provisions. Upon termination you shall destroy the Software and
+all copies or portions thereof.
+
+This License represents the entire statement of the understandings
+and agreements among the parties.
+
+
+These terms of use are subject to change in future version and releases.
+
+------------------------------------------------------------------------
+Copyright (c) 1997 Software Farm, Inc.  All Rights Reserved.
+

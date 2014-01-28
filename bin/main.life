@@ -1,0 +1,5 @@
+#MiLife version 1.0
+type=document, numberOfColumns=20, backgroundColor=white, validateRulesOnceEachGeneration=false, applyRulesInParallel=false, numberOfRows=20
+type=Rule, matchWholeRegion=false, numberOfColumns=3, frequencyOfValidity=33, resultPattern="white,red,white,red,white,red,white,red,white", sourcePattern="white,white,white,white,red,white,white,white,white", numberOfRows=3
+type=Rule, matchWholeRegion=false, numberOfColumns=3, frequencyOfValidity=50, resultPattern="white,white,white,white,red,white,white,white,white", sourcePattern="white,red,white,red,white,red,white,red,white", numberOfRows=3
+type=Rule, matchWholeRegion=false, numberOfColumns=3, frequencyOfValidity=100, resultPattern="white,white,white,white,white,white,white,white,white", sourcePattern="white,white,white,white,white,white,white,white,white", numberOfRows=3

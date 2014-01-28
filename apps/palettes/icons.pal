@@ -1,0 +1,12 @@
+<!Mica-FormattedFile ViewManager = com.swfm.mica.MiPaletteViewManager>
+
+name = Icons, type = palette, backgroundColor = lightgreen, Expand=true
+name = red-ball, type = image, value = ${Mi_HOME}/apps/images/red-ball.gif, container = Icons
+name = blue-ball, type = image, value = ${Mi_HOME}/apps/images/blue-ball.gif, container = Icons
+name = green-ball, type = image, value = ${Mi_HOME}/apps/images/green-ball.gif, container = Icons
+name = magenta-ball, type = image, value = ${Mi_HOME}/apps/images/magenta-ball.gif, container = Icons
+name = yellow-ball, type = image, value = ${Mi_HOME}/apps/images/yellow-ball.gif, container = Icons
+name = cyan-ball, type = image, value = ${Mi_HOME}/apps/images/cyan-ball.gif, container = Icons
+name = computer, type = image, value = ${Mi_HOME}/apps/images/computer.gif, container = Icons
+
+

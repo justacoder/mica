@@ -1,0 +1,32 @@
+<!Mica-FormattedFile ViewManager = com.swfm.mica.MiPaletteViewManager>
+
+name = document, title = Shapes, type = document, readOnly = false
+
+name = Basic, type = palette, Expand=true
+name = rectangle, type = rectangle, width = 30, height = 30, container = Basic
+name = circle, type = circle, width = 30, height = 30, container = Basic
+name = ellipse, type = ellipse, width = 40, height = 20, container = Basic
+name = roundRectangle, type = roundRectangle, width = 30, height = 30, container = Basic
+name = triangle, type = triangle, width = 30, height = 30, container = Basic
+name = regularPolygon, type = regularPolygon, numberOfSides = 5, width = 30, height = 30, container = Basic
+
+name = 2.5D, type = palette, backgroundColor = white, Expand=true
+name = 2.5DAttributes, type = attributes, backgroundColor = lightGray, borderLook = raised
+name = rectangle1, type = rectangle, width = 30, height = 30, container = 2.5D, attributes = 2.5DAttributes
+name = circle1, type = circle, width = 30, height = 30, container = 2.5D, attributes = 2.5DAttributes
+name = ellipse1, type = ellipse, width = 40, height = 20, container = 2.5D, attributes = 2.5DAttributes
+name = roundRectangle1, type = roundRectangle, width = 30, height = 30, container = 2.5D, attributes = 2.5DAttributes
+name = triangle1, type = triangle, width = 30, height = 30, container = 2.5D, attributes = 2.5DAttributes
+name = regularPolygon1, type = regularPolygon, numberOfSides = 5, width = 30, height = 30, container = 2.5D, attributes = 2.5DAttributes
+
+
+#name = Shadowed, type = palette, backgroundColor = white, Expand=true
+#name = ShadowedAttributes, type = attributes, backgroundColor = lightGray, borderLook = raised, hasShadow = true
+#name = rectangle2, type = rectangle, width = 30, height = 30, container = Shadowed, attributes = ShadowedAttributes
+#name = circle2, type = circle, width = 30, height = 30, container = Shadowed, attributes = ShadowedAttributes
+#name = ellipse2, type = ellipse, width = 40, height = 20, container = Shadowed, attributes = ShadowedAttributes
+#name = roundRectangle2, type = roundRectangle, width = 30, height = 30, container = Shadowed, attributes = ShadowedAttributes
+#name = triangle2, type = triangle, width = 30, height = 30, container = Shadowed, attributes = ShadowedAttributes
+#name = regularPolygon2, type = regularPolygon, numberOfSides = 5, width = 30, height = 30, container = Shadowed, attributes = ShadowedAttributes
+
+

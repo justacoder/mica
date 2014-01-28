@@ -1,0 +1,21 @@
+Mi_RECOVER_LOST_CHANGES_FROM_BACKUP_WINDOW_YES	=Yes, please
+Mi_RECOVER_LOST_CHANGES_FROM_BACKUP_WINDOW_NO	=No, thank you
+MiToolBar.showBorders	=false
+MiToolBar.focusBorders	=raised
+MiToolBar.selected.backgroundColor=darkWhite
+MiToolkit.backgroundColor=windowsGray
+MiToolkit.indentedBackground.backgroundColor=windowsDarkGray
+MiToolkit.textIneditable.backgroundColor=windowsVeryDarkGray
+MiButton.selected.backgroundColor=windowsDarkGray
+MiCheckBox.selected.backgroundColor=white
+MiButton.font=Arial.bold.10
+MiPushButton.label.fontBold=true
+MiToggleButton.label.fontBold=true
+MiMenuLauncherButton.label.fontname=Tahoma
+MiMenuLauncherButton.label.fontBold=true
+MiMenuLauncherButton.label.fontSize=12
+MiMenuItem.label.fontname=Tahoma
+MiMenuItem.label.fontBold=true
+MiMenuItem.label.fontSize=12
+MiToolkit.cellFocus.backgroundColor=windowsLightGray
+

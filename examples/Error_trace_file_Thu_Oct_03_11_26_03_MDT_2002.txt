@@ -1,0 +1,20 @@
+<No version information for application with the error>
+java.lang.NullPointerException
+	at com.swfm.mica.MiEditorBackgroundMenuCommands.processCommand(MiEditorBackgroundMenuCommands.java:134)
+	at com.swfm.mica.MiActionCallback.processAction(MiActionCallback.java:162)
+	at com.swfm.mica.MiPart.dispatchAction(MiPart.java:7253)
+	at com.swfm.mica.MiPart.dispatchAction(MiPart.java:7191)
+	at com.swfm.mica.MiMenuItem.select(MiMenuItem.java:186)
+	at com.swfm.mica.MiStandardMenu.selectItem(MiStandardMenu.java:592)
+	at com.swfm.mica.MiStandardMenu.selectItem(MiStandardMenu.java:247)
+	at com.swfm.mica.MiBrowsableGridEventHandler.processCommand(MiBrowsableGridEventHandler.java:201)
+	at com.swfm.mica.MiEventHandler.processEvent(MiEventHandler.java:552)
+	at com.swfm.mica.MiPart.dispatchEvent(MiPart.java:6694)
+	at com.swfm.mica.MiGrabObjectEventHandlers.processEvent(MiGrabObjectEventHandlers.java:110)
+	at com.swfm.mica.MiGrabObjectEventHandlers.processEvent(MiGrabObjectEventHandlers.java:98)
+	at com.swfm.mica.MiGrabObjectEventHandlers.processEvent(MiGrabObjectEventHandlers.java:76)
+	at com.swfm.mica.MiWindow.dispatchEvent(MiWindow.java:939)
+	at com.swfm.mica.MiCanvas.dispatchEvent(MiCanvas.java:948)
+	at com.swfm.mica.MiCanvas.run(MiCanvas.java:570)
+	at java.lang.Thread.run(Thread.java:484)
+

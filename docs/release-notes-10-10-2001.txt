@@ -1,0 +1,2 @@
+Mi_EDITOR_CURRENT_LAYER_CHANGED_ACTION has the previous current layer as the system action info, not the current layer as it was before - since the current layer is easily retrievable from the editor itself that genrated the action.
+

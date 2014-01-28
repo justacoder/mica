@@ -1,0 +1,573 @@
+	
+.1 Introduction
+
+	Welcome to the Mica Network Graphics Editor! We hope you enjoy
+	your stay...
+
+	The Mica Network Graphics Editor is an editor designed to make the
+	viewing and editing of networks graphs easy and fun. 
+
+	There are many interactive commands to assist the viewing and editing 
+	process. Examples of these are: dragging with the middle mouse button
+	to connect nodes, dragging with the left mouse in the editor background
+	to pan in any direction (or with the right mouse button with the shift 
+	key held down).
+
+	The graphs are saved and loaded from text files that can be edited
+	with common tools like the Microsoft Window's "NotePad" program. These
+	files may be one of a number of formats. The more complicated the format
+	of the file the more features the file has. 
+
+.1.1 Acknowledgements
+
+	We thank Sun Microsystems for creating such a nice little language
+	called Java(tm). 
+
+.2 The Menubar
+
+.2.1 The File Menu
+
+	This menubar pulldown is activated by clicking on 'File' in the menubar
+	or by using the short cut key Meta-F.
+
+<B><Size 16>New ...</B></Size>
+
+	Activated with mouse or short cut key Ctrl-N and causes the current
+	document to be closed and a new unnamed document to be opened.
+
+<B><Size 16>Open ...
+
+	Activated with mouse or short cut key Ctrl-O and causes the Open
+	Dialog to be displayed. If the user has made unsaved changes to the 
+	open Document the Save Changes Dialog is displayed before the
+	Open Dialog is displayed.
+
+<B><Size 16>Save 
+
+	Activated with mouse or short cut key Ctrl-S and saves the currently
+	open Document. This item is disabled and dimmed if there is no
+	currently open Document or is the currently open Document has
+	not been changed since the last save.
+
+<B><Size 16>Save As...
+
+	Activated with mouse or short cut key Ctrl-A and causes the Save As
+	Dialog to be displayed. This item is disabled and dimmed if there is no
+	currently open Document.
+
+<B><Size 16>Close
+
+	Activated with mouse and causes the currently open Document to
+	be closed. This item is disabled and dimmed if there is no currently 
+	open Document. If the user has made unsaved changes to the open 
+	Document the Save Changes Dialog is displayed before closing.
+
+<B><Size 16>Print Setup...
+
+	This item is always disabled and dimmed.
+
+<B><Size 16>Print
+
+	This item allows printing PostScript to a file.
+
+<B><Size 16>Quit
+
+	Activated with mouse or short cut key Ctrl-Q and causes the application
+	to be exited. If the user has made unsaved changes to the open 
+	Document the Save Changes Dialog is displayed before exiting.
+
+.2.2 The Edit Menu
+
+	This menubar pulldown is activated by clicking on 'Edit' in the menubar
+	or by using the short cut key Meta-E.
+
+<B><Size 16>Undo
+
+	Activated with mouse or short cut key Ctrl-Z (or key 'u' if menu is
+	visible). Causes the undoing of the last editing operation. This item 
+	is disabled and dimmed if there is nothing to undo.
+
+	Undoable operations are:
+
+		Delete item in editor
+		Delete placeholders in network (NOT IMPLEMENTED)
+		Move item in editor
+		Change name of item in editor
+
+<B><Size 16>Redo
+
+	Activated with mouse or short cut key Ctrl-Y (or key 'r' if menu is
+	visible). Causes the undoing of the last editing operation. This item 
+	is disabled and dimmed if there is nothing to redo, if nothing has been
+	undone.
+
+<B><Size 16>Cut
+
+	Activated with mouse or short cut key Ctrl-Y (or key 't' if menu is
+	visible). Causes the removal of any selected items in the editor area,
+	moving them to the clipboard. This item is disabled and dimmed if 
+	there is nothing selected in the editor.
+
+<B><Size 16>Copy
+
+	Activated with mouse or short cut key Ctrl-C (or key 'c' if menu is
+	visible). Causes the copying of any selected items in the editor area,
+	moving them to the clipboard. This item is disabled and dimmed if 
+	there is nothing selected in the editor.
+
+<B><Size 16>Paste
+
+	Activated with mouse or short cut key Ctrl-V (or key 'p' if menu is
+	visible). Causes the copying of any items in the clipboard to the center
+	of the current editor area. This item is disabled and dimmed if there 
+	is something selected in the editor or if the clipboard is empty.
+
+<B><Size 16>Delete
+
+	Activated with mouse or short cut key <delete> (or key 'd' if menu is
+	visible). Causes the deletion of any selected items in the editor area. 
+	This item is disabled and dimmed if there is nothing selected in the 
+	editor.
+
+<B><Size 16>Select All
+
+	Activated with mouse (or key 's' if menu is visible). Causes the 
+	selection of all items in the editor. 
+
+<B><Size 16>Deselect All
+
+	Activated with mouse or short cut key <Esc> (or key 'a' if menu is
+	visible). Causes the de-selection of any selected items in the editor. 
+	This item is disabled and dimmed if there is nothing selected in the 
+	editor.
+
+<B><Size 16>Duplicate
+
+	Activated with mouse (or key 'l' if menu is visible). Causes the 
+	copying of any selected items in the editor. The copies are placed 
+	next to their copied items. This item is disabled and dimmed if 
+	there is nothing selected in the editor.
+
+.2.3 The View Menu
+
+	This menubar pulldown is activated by clicking on 'View' in the menubar
+	or by using the short cut key Meta-V.
+
+<B><Size 16>Zoom In
+
+	Activated by selecting menu item or by clicking the middle mouse button
+	(with or without the shift or control key held down) inside the graphics 
+	editor. Selecting the menu item causes the zoom in to be centered around 
+	the middle of the graphics editor. Clicking the middle mouse button 
+	inside the graphics editor causes the zoom in to be centered around the 
+	current mouse position.
+
+<B><Size 16>Zoom Out	
+
+	Activated by selecting menu item or by clicking the right mouse button
+	(with the shift or control key held down) inside the graphics editor. 
+	Selecting the menu item causes the zoom in to be centered around the 
+	middle of the graphics editor. Clicking the middle mouse button inside 
+	the graphics editor causes the zoom in to be centered around the current 
+	mouse position.
+
+<B><Size 16>View All
+
+	Activated with mouse or short cut key Ctrl-W (or key 'a' if menu is
+	visible). Causes the editor to 'zoom all of the way out' and the 
+	scrollbars to disappear (i.e. sets the magnification to the smallest
+	possible value).
+
+<B><Size 16>View Previous
+
+	Activated with mouse or short cut key Ctrl-R (or key 'p' if the menu
+	is visible). Causes the view in the editor to return to the previous
+	location and magnification level. This item is disabled and dimmed if 
+	there isn't a previous view.
+
+<B><Size 16>View Next
+
+	Activated with mouse or short cut key Ctrl-T (or key 'n' if the menu
+	is visible). Causes the view in the editor to advance to the next view.
+	This item is disabled and dimmed if there is no next view (i.e. 'view 
+	previous' has not been used).
+
+<B><Size 16>Redraw
+
+	Activated with mouse or short cut key Ctrl+L ((or key 'r' if the menu
+	is visible).
+
+<B><Size 16>Toolbar
+
+	Activated with mouse. This item toggles the visibility of the tool bar.
+
+<B><Size 16>Status Bar
+
+	Activated with mouse. This item toggles the visibility of the status bar.
+
+<B><Size 16>Birds Eye View
+
+	Activated with mouse. This item toggles the visibility of the birds-eye
+	view.
+	<NOT IMPLEMENTED>.
+
+.2.4 The Shape Menu
+
+	This menubar pulldown is activated by clicking on 'Shape' in the menubar
+	or by using the short cut key Meta-S.
+
+<B><Size 16>Group
+
+	Activated with mouse or short cut key Ctrl-G (or key 'g' if the menu
+	is visible). This item causes the selected shapes in the editor to be
+	combined into one shape. Henceforth moving this one shape will move
+	all it's constituent shapes and it can also be collapsed into a single
+	icon. This item is disabled and dimmed if there is nothing selected in
+	the editor.
+
+<B><Size 16>Ungroup
+
+	Activated with mouse or short cut key Ctrl-U (or key 'u' if the menu
+	is visible). This item causes the selected shapes in the editor to be
+	decomposed into their constituent shapes. Henceforth these constituent
+	shapes can be moved individually. This item is disabled and dimmed if 
+	there is nothing selected in the editor.
+
+<B><Size 16>Collapse (Iconify)
+
+	Activated with mouse or short cut key Ctrl-T (or key 'c' if the menu
+	is visible). This item causes the selected shapes in the editor to be
+	grouped and then replaced with a single icon. This item is disabled and
+	dimmed if there is nothing selected in the editor.
+
+<B><Size 16>Expand (DeIconify)
+
+	Activated with mouse or short cut key Ctrl-E (or key 'x' if the menu
+	is visible). This item causes the selected shapes in the editor that 
+	were previously collapsed to be ungrouped. This item is disabled and
+	dimmed if there is nothing selected in the editor.
+
+<B><Size 16>Bring to Front
+
+	Activated with mouse or short cut key Ctrl-F (or key 'f' if the menu
+	is visible). This item causes the selected shapes in the editor to be
+	brought to the front of any unselected shapes. This item is disabled and
+	dimmed if there is nothing selected in the editor.
+
+<B><Size 16>Send to Back
+
+	Activated with mouse or short cut key Ctrl-B (or key 'b' if the menu
+	is visible). This item causes the selected shapes in the editor to be
+	sent to be behind any unselected shapes. This item is disabled and
+	dimmed if there is nothing selected in the editor.
+	
+<B><Size 16>Bring Foward
+
+	Activated with mouse. This item causes each selected shape in the editor
+	to be brought in front of the shape that is immediately in front of it.
+	This item is disabled and dimmed if there is nothing selected in the editor.
+
+<B><Size 16>Send Backward
+
+	Activated with mouse. This item causes each selected shape in the editor to
+	be sent to be behind the shape immediately behind it. This item is disabled and
+	dimmed if there is nothing selected in the editor.
+
+.2.5 The Connect Menu
+
+	This menubar pulldown is activated by clicking on 'Connect' in the menubar
+	or by using the short cut key Meta-C.
+
+<B><Size 16>Connect
+
+	Activated with mouse. This item causes each selected shape in the editor to
+	be connected to every other selected shape in the editor. The type of 
+	connection is as specified in the toolbar. This item is disabled and 
+	dimmed if there is less than two nodes selected in the editor.
+
+<B><Size 16>Disconnect
+
+	Activated with mouse. This item causes each selected shape in the editor
+	to be disconnected from every other shape in the editor. This item is 
+	disabled and dimmed if there is nothing selected in the editor.
+
+.2.6 The Format Menu
+
+	This menubar pulldown is activated by clicking on 'Format' in the menubar
+	or by using the short cut key Meta-O.
+
+<B><Size 16>Expand Editing Area
+
+	Activated with mouse. This item causes the area in which shapes appear in
+	the editor to be enlargened.
+
+<B><Size 16>Shrink Editing Area
+
+	Activated with mouse. This item causes the area in which shapes appear
+	in the editor to be reduced in size. This item only shrinks the area if 
+	it was previously expanded.
+
+<B><Size 16>AutoPlace
+
+	Activated with mouse. This item causes an attempt to be made to place
+	all nodes equi-distant from each other and with a minimum of overlapping 
+	connections.
+
+.2.7 The Tools Menu
+
+	This menubar pulldown is activated by clicking on 'Tools' in the menubar
+	or by using the short cut key Meta-T.
+
+<B><Size 16>Options...
+
+	Activated with mouse. This item causes the Options Dialog to be
+	displayed.
+
+.2.8 The Help Menu
+
+	This menubar pulldown is activated by clicking on 'Help' in the menubar
+	or by using the short cut key Meta-H.
+
+<B><Size 16>About...
+
+	Activated by selecting menu item. This displays a dialog box containing
+	information about the application.
+
+<B><Size 16>Help Topics...
+
+	Activated by selecting menu item. This displays a dialog box containing
+	searchable information about the application and how it is used and works.
+
+<B><Size 16>Tool Hints
+
+	Activated by selecting menu item. This enables/disables tool hint help
+	messages, which are displayed when the mouse cursor pauses over various
+	widgets in the window. Note that tool hints are disabled in toolbars
+	if the toolbar icons are already labeled.
+
+.3 Interactive Editing
+
+<B><Size 16>ZoomIn
+
+	Middle mouse button click (with either no modifier held down or with 
+	the shift or control key held down).
+
+<B><Size 16>ZoomOut	
+
+	Right mouse button click (with either the shift or control key held down).
+
+<B><Size 16>ZoomInArea	
+
+	Middle mouse button drag rubberbands a rectangle which outlines the area 
+	that will be expanded to fill the whole editor.
+
+<B><Size 16>ZoomOutArea
+
+	Right mouse button drag rubberbands a rectangle which outlines the area 
+	that the whole editor will be shrunk to fit.
+
+<B><Size 16>Pan
+
+	Right mouse button drag with the shift key held down allows panning 
+	(scrolling) in any direction.
+
+<B><Size 16>Pan	
+
+	Left mouse button drag with the shift key held down in the 
+	background of the editor allows panning (scrolling) in any direction.
+
+<B><Size 16>Select
+
+	Select an item (node or connection) by using left mouse button 
+	click.
+
+<B><Size 16>DeSelectAll
+
+	De-select all items (nodes and connections) by clicking the left 
+	mouse button in the background of the editor.
+
+<B><Size 16>SelectArea
+
+	Select all items in an area by dragging with the left mouse button
+	in the background of the editor which will rubberband a box which 
+	indicates the area of selection.
+
+<B><Size 16>DeSelectItem
+
+	DeSelect an item (node or connection) by using left mouse button 
+	click.
+
+<B><Size 16>SelectAnother
+
+	Select an additional item by clicking on the item with the left 
+	mouse button while holding the shift or control keys down.
+
+<B><Size 16>Copy
+
+	Using the left mouse button, drag on an item with the ??? key held 
+	down. If the item is selected, a copy will also be made of all 
+	other selected items as well.
+
+<B><Size 16>Move	
+
+	Using the left mouse button, drag on an item.
+
+<B><Size 16>MoveSelectedItems
+
+	Using the left mouse button with the Shift key held down, drag on any 
+	selected item. 
+
+<B><Size 16>MakeAConnection	
+
+	Holding the middle mouse button down drag from the source node to the
+	destination node.
+
+<B><Size 16>Context Menu	
+
+	Click the right mouse button in the editor to display this menu. This 
+	menu goes away if the left mouse button is clicked, the <Esc> key is 
+	pressed, or an item in the menu is chosen.
+
+	The operations available in this menu are:
+
+		Cut
+		Copy
+		Paste
+		Duplicate
+		Delete
+		Zoom In
+		Zoom Out
+		Properties...
+
+		and operate as described elsewhere.
+
+.4 Editing Networks, Graphs and Layouts
+
+	When a node is dragged and dropped on a placeHolder, whether or not the 
+	placeHolder is selected, the placeHolder is replaced by the node.
+
+.4.1 Selecting Things in Networks, Graphs and Layouts
+
+<B><Size 16>Select Whole Network
+
+	Click anywhere on network with the left mouse button. A selection box 
+	will appear around the network.
+
+<B><Size 16>Select All PlaceHolders and Connections in the Network
+
+	After selecting whole network click on a connection or empty placeHolder 
+	with the left mouse button.  The selection box surrounding the network 
+	will disappear and all connections and placeHolders will now be drawn in
+	red.
+
+<B><Size 16>Select All Nodes in the Network
+
+	After selecting whole network click on a node with the left mouse button. 
+	The selection box surrounding the network will disappear and be replaced 
+	by selection boxes around each and every node.
+
+<B><Size 16>Select All PlaceHolders in the Network
+
+	After selecting whole network click on a placeHolder with the left mouse 
+	button. The selection box surrounding the network will disappear and be 
+	replaced by selection boxes around each and every placeHolder.
+
+<B><Size 16>Select Node in the Network
+
+	After selecting all nodes in the network click on a node with the left 
+	mouse button. The selection boxes around all of the nodes will disappear 
+	execpt for the one around the selected node. Additional nodes may now be 
+	selected by clicking on them with the left mouse button. Nodes may also 
+	be deselected by clicking on them again with the left mouse button (which 
+	selects their placeHolder) and then again.
+
+<B><Size 16>Select PlaceHolder in the Network
+
+	A placeHolder that contains a node may be selected by first selecting the 
+	node then clicking on it again. If it does not contain a node then after
+	selecting all placeHolders in the network click on the desired placeHolder.
+	The red connections and placeHolders will disappear except for the selected 
+	placeHolder. Additional placeHolders can be selected by clicking on them. A
+	placeHolder can be deselected by clikcing on it again.
+
+<B><Size 16>DeSelecting Everything in the Network.
+
+	Click anywhere outside the network rectangular bounds or press the <Esc>
+	Key.
+
+<B><Size 16>Changing which PlaceHolder is Selected:
+
+	Right		- use the right arrow key
+	Left		- use the left arrow key
+	Above		- use the up arrow key
+	Below		- use the down arrow key
+	Left Side	- use the home key
+	Right Side	- use the end key
+	Top Side	- use the page-up key
+	Bottom Side	- use the page-down key
+
+.4.2 Changing the Orientation of Networks, Graphs and Layouts
+
+<B><Size 16>Changing Orientation of Network Topology:
+
+	Some topologies have an orientation (Tree, Line, 2dMesh, CrossBar). To 
+	change their orientation from vertical to horizontal or visa-versa 
+	press the <Ctrl +> key (hold down the control key and press the '+' 
+	key).
+
+.4.3 Deleting Things in Networks, Graphs and Layouts
+
+<B><Size 16>Delete Whole Network
+
+	Select the whole network and press the delete key.
+
+<B><Size 16>Delete All Network Connection and PlaceHolders
+
+	Select all network connections and placeHolders and press the delete key.
+	This will leave any nodes alone and floating free outside any network.
+
+<B><Size 16>Delete All Nodes in the Network
+
+	Select all nodes in the network and press the delete key. This will leave
+	 the network alone and all nodes will be replaced by visible placeHolders.
+
+<B><Size 16>Delete Node in the Network
+
+	Select node(s) in the network to be deleted and press the delete key. 
+	This will leave the network alone and all deleted nodes will be replaced 
+	by visible placeHolders. 
+
+<B><Size 16>Delete PlaceHolder in the Network
+
+	Select placeHolder(s) in the network to be deleted and press the delete
+	key. This will leave the placeHolder's nodes alone but they will no longer 
+	be part of the network.
+
+	Select a placeHolder. Use the backspace key to delete the placeHolder 
+	preceeding it (note that the node 'preceeding' a particular placeHolder is 
+	dependent on the topology of the network).
+
+.4.4 Adding Things to Networks, Graphs and Layouts
+
+<B><Size 16>Insert PlaceHolder in the Network
+
+	To Left of last Selected PlaceHolder
+
+		Press the 'h' key.
+
+	To Right of last Selected PlaceHolder
+
+		Press the Ctrl<enter> key.
+
+	Below last Selected PlaceHolder
+
+		Press the <enter> key.
+
+	Above last Selected PlaceHolder
+
+		Press the 'i' key (or Ctrl-i).
+
+	(note that the placeHolder 'above', 'below', 'left of', etc.  of a 
+	particular placeHolder is dependent on the topology of the network).
+
+

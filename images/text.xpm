@@ -1,0 +1,44 @@
+#define text_chars_per_pixel 1
+#define text_format 1
+#define text_height 32
+#define text_width 32
+#define text_ncolors 3
+static char * text_colors[] = {
+"+", "none",
+"a", "black",
+"b", "cyan",
+};
+static char * text_pixels[] = {
+"++++++++++++++++++++++++++++++++",
+"++++++++++++++++++++++++++++++++",
+"++aaaaaaaaaaaaaaaaaaaaaaaaaaaa++",
+"++aaaaaaaaaaaaaaaaaaaaaaaaaaaa++",
+"++aaaaaaaaaaaaaaaaaaaaaaaaaaaa++",
+"++aaaaaaaaaaaaaaaaaaaaaaaaaaaa++",
+"++aaaaaaaaaaaaaaaaaaaaaaaaaaaa++",
+"++aaa++++++++aaaaaa++++++++aaa++",
+"++aa+++++++++aaaaaa+++++++++aa++",
+"++a++++++++++aaaaaa++++++++++a++",
+"+++++++++++++aaaaaa+++++++++++++",
+"+++++++++++++aaaaaa+++++++++++++",
+"+++++++++++++aaaaaa+++++++++++++",
+"+++++++++++++aaaaaa+++++++++++++",
+"+++++++++++++aaaaaa+++++++++++++",
+"+++++++++++++aaaaaa+++++++++++++",
+"+++++++++++++aaaaaa+++++++++++++",
+"+++++++++++++aaaaaa+++++++++++++",
+"+++++++++++++aaaaaa+++++++++++++",
+"+++++++++++++aaaaaa+++++++++++++",
+"+++++++++++++aaaaaa+++++++++++++",
+"+++++++++++++aaaaaa+++++++++++++",
+"+++++++++++++aaaaaa+++++++++++++",
+"+++++++++++++aaaaaa+++++++++++++",
+"+++++++++++++aaaaaa+++++++++++++",
+"+++++++++++++aaaaaa+++++++++++++",
+"+++++++++++++aaaaaa+++++++++++++",
+"+++++++++++++aaaaaa+++++++++++++",
+"+++++++++++++aaaaaa+++++++++++++",
+"+++++++++++++aaaaaa+++++++++++++",
+"++++++++++++++++++++++++++++++++",
+"++++++++++++++++++++++++++++++++",
+};

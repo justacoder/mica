@@ -1,0 +1,36 @@
+#define circles_chars_per_pixel 1
+#define circles_format 1
+#define circles_height 24
+#define circles_width 24
+#define circles_ncolors 3
+static char * circles_colors[] = {
+"+", "none",
+"a", "black",
+"b", "cyan",
+};
+static char * circles_pixels[] = {
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++++++++++aaaaa+++++++++",
+"++++++++aabbbbbaa+++++++",
+"++++++aabbbbbbbbbaa+++++",
+"+++++abbbbbbbbbbbbba++++",
+"+++++abbbbbbbbbbbbba++++",
+"++++abbbbbbbbbbbbbbba+++",
+"++++abbbbbbbbbbbbbbba+++",
+"+++abbbbbbbbbbbbbbbbba++",
+"+++abbbbbbbbbbbbbbbbba++",
+"+++abbbbbbbbbbbbbbbbba++",
+"+++abbbbbbbbbbbbbbbbba++",
+"+++abbbbbbbbbbbbbbbbba++",
+"++++abbbbbbbbbbbbbbba+++",
+"++++abbbbbbbbbbbbbbba+++",
+"+++++abbbbbbbbbbbbba++++",
+"+++++abbbbbbbbbbbbba++++",
+"++++++aabbbbbbbbbaa+++++",
+"++++++++aabbbbbaa+++++++",
+"++++++++++aaaaa+++++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+};

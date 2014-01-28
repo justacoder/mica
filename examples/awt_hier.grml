@@ -1,0 +1,51 @@
+<!Mica-FormattedFile ViewManager = com.swfm.mica.MiGraphicsTreeViewManager>
+name = BorderLayout, type=node, file = /j/BorderLayout.java, packageName = java.awt, scope = public, kind = class, lineNumber = 37, numberOfCharacters = 4421, connectedFrom = "LayoutManager"
+name = Button, type=node, file = /j/Button.java, packageName = java.awt, scope = public, kind = class, lineNumber = 30, numberOfCharacters = 641, connectedFrom = "Component"
+name = Color, type=node, file = /j/Color.java, packageName = java.awt, scope = public, kind = class, lineNumber = 31, numberOfCharacters = 5076
+name = Toolkit, type=node, file = /j/Toolkit.java, packageName = java.awt, scope = public, kind = abstract, backgroundColor = darkWhite, lineNumber = 37, numberOfCharacters = 2649
+name = Component, type=node, file = /j/Component.java, packageName = java.awt, scope = public, kind = abstract, backgroundColor = darkWhite, lineNumber = 34, numberOfCharacters = 11900, connectedFrom = "ImageObserver"
+name = Container, type=node, file = /j/Container.java, packageName = java.awt, scope = public, kind = abstract, backgroundColor = darkWhite, lineNumber = 32, numberOfCharacters = 6013, connectedFrom = "Component"
+name = Dimension, type=node, file = /j/Dimension.java, packageName = java.awt, scope = public, kind = class, lineNumber = 28, numberOfCharacters = 411
+name = Event, type=node, file = /j/Event.java, packageName = java.awt, scope = public, kind = class, lineNumber = 39, numberOfCharacters = 5041
+name = Font, type=node, file = /j/Font.java, packageName = java.awt, scope = public, kind = class, lineNumber = 29, numberOfCharacters = 2416
+name = Frame, type=node, file = /j/Frame.java, packageName = java.awt, scope = public, kind = class, lineNumber = 30, numberOfCharacters = 3538, connectedFrom = "Window, MenuContainer"
+name = Graphics, type=node, file = /j/Graphics.java, packageName = java.awt, scope = public, kind = abstract, backgroundColor = darkWhite, lineNumber = 34, numberOfCharacters = 4554
+name = Label, type=node, file = /j/Label.java, packageName = java.awt, scope = public, kind = class, lineNumber = 29, numberOfCharacters = 1550, connectedFrom = "Component"
+name = LayoutManager, type=node, file = /j/LayoutManager.java, packageName = java.awt, scope = public, kind = interface, backgroundColor = white, lineNumber = 30, numberOfCharacters = 286
+name = List, type=node, file = /j/List.java, packageName = java.awt, scope = public, kind = class, lineNumber = 30, numberOfCharacters = 5059, connectedFrom = "Component"
+name = Polygon, type=node, file = /j/Polygon.java, packageName = java.awt, scope = public, kind = class, lineNumber = 28, numberOfCharacters = 2545
+name = Checkbox, type=node, file = /j/Checkbox.java, packageName = java.awt, scope = public, kind = class, lineNumber = 30, numberOfCharacters = 1824, connectedFrom = "Component"
+name = CardLayout, type=node, file = /j/CardLayout.java, packageName = java.awt, scope = public, kind = class, lineNumber = 34, numberOfCharacters = 4501, connectedFrom = "LayoutManager"
+name = AWTException, type=node, file = /j/AWTException.java, packageName = java.awt, scope = public, kind = class, lineNumber = 28, numberOfCharacters = 67, connectedFrom = "Exception"
+name = MenuItem, type=node, file = /j/MenuItem.java, packageName = java.awt, scope = public, kind = class, lineNumber = 29, numberOfCharacters = 1025, connectedFrom = "MenuComponent"
+name = Scrollbar, type=node, file = /j/Scrollbar.java, packageName = java.awt, scope = public, kind = class, lineNumber = 29, numberOfCharacters = 2654, connectedFrom = "Component"
+name = TextArea, type=node, file = /j/TextArea.java, packageName = java.awt, scope = public, kind = class, lineNumber = 30, numberOfCharacters = 2111, connectedFrom = "TextComponent"
+name = TextField, type=node, file = /j/TextField.java, packageName = java.awt, scope = public, kind = class, lineNumber = 29, numberOfCharacters = 1607, connectedFrom = "TextComponent"
+name = Menu, type=node, file = /j/Menu.java, packageName = java.awt, scope = public, kind = class, lineNumber = 30, numberOfCharacters = 1723, connectedFrom = "MenuItem, MenuContainer"
+name = FontMetrics, type=node, file = /j/FontMetrics.java, packageName = java.awt, scope = public, kind = abstract, backgroundColor = darkWhite, lineNumber = 30, numberOfCharacters = 1676
+name = Canvas, type=node, file = /j/Canvas.java, packageName = java.awt, scope = public, kind = class, lineNumber = 31, numberOfCharacters = 231, connectedFrom = "Component"
+name = Choice, type=node, file = /j/Choice.java, packageName = java.awt, scope = public, kind = class, lineNumber = 32, numberOfCharacters = 1486, connectedFrom = "Component"
+name = Image, type=node, file = /j/Image.java, packageName = java.awt, scope = public, kind = abstract, backgroundColor = darkWhite, lineNumber = 32, numberOfCharacters = 428
+name = Window, type=node, file = /j/Window.java, packageName = java.awt, scope = public, kind = class, lineNumber = 32, numberOfCharacters = 2346, connectedFrom = "Container"
+name = FocusManager, type=node, file = /j/Window.java, packageName = java.awt, scope = packagePrivate, kind = class, lineNumber = 197, numberOfCharacters = 2857
+name = Panel, type=node, file = /j/Panel.java, packageName = java.awt, scope = public, kind = class, lineNumber = 29, numberOfCharacters = 240, connectedFrom = "Container"
+name = FlowLayout, type=node, file = /j/FlowLayout.java, packageName = java.awt, scope = public, kind = class, lineNumber = 30, numberOfCharacters = 3335, connectedFrom = "LayoutManager"
+name = MenuBar, type=node, file = /j/MenuBar.java, packageName = java.awt, scope = public, kind = class, lineNumber = 35, numberOfCharacters = 1842, connectedFrom = "MenuComponent, MenuContainer"
+name = FileDialog, type=node, file = /j/FileDialog.java, packageName = java.awt, scope = public, kind = class, lineNumber = 35, numberOfCharacters = 1440, connectedFrom = "Dialog"
+name = GridLayout, type=node, file = /j/GridLayout.java, packageName = java.awt, scope = public, kind = class, lineNumber = 29, numberOfCharacters = 2917, connectedFrom = "LayoutManager"
+name = Point, type=node, file = /j/Point.java, packageName = java.awt, scope = public, kind = class, lineNumber = 27, numberOfCharacters = 610
+name = Rectangle, type=node, file = /j/Rectangle.java, packageName = java.awt, scope = public, kind = class, lineNumber = 28, numberOfCharacters = 3062
+name = MenuComponent, type=node, file = /j/MenuComponent.java, packageName = java.awt, scope = public, kind = abstract, backgroundColor = darkWhite, lineNumber = 29, numberOfCharacters = 958
+name = AWTError, type=node, file = /j/AWTError.java, packageName = java.awt, scope = public, kind = class, lineNumber = 28, numberOfCharacters = 56, connectedFrom = "Error"
+name = Insets, type=node, file = /j/Insets.java, packageName = java.awt, scope = public, kind = class, lineNumber = 33, numberOfCharacters = 577, connectedFrom = "Cloneable"
+name = Dialog, type=node, file = /j/Dialog.java, packageName = java.awt, scope = public, kind = class, lineNumber = 31, numberOfCharacters = 1171, connectedFrom = "Window"
+name = CheckboxGroup, type=node, file = /j/CheckboxGroup.java, packageName = java.awt, scope = public, kind = class, lineNumber = 30, numberOfCharacters = 637
+name = CheckboxMenuItem, type=node, file = /j/CheckboxMenuItem.java, packageName = java.awt, scope = public, kind = class, lineNumber = 29, numberOfCharacters = 567, connectedFrom = "MenuItem"
+name = MenuContainer, type=node, file = /j/MenuContainer.java, packageName = java.awt, scope = public, kind = interface, backgroundColor = white, lineNumber = 28, numberOfCharacters = 94
+name = TextComponent, type=node, file = /j/TextComponent.java, packageName = java.awt, scope = public, kind = class, lineNumber = 30, numberOfCharacters = 2434, connectedFrom = "Component"
+name = MediaTracker, type=node, file = /j/MediaTracker.java, packageName = java.awt, scope = public, kind = class, lineNumber = 127, numberOfCharacters = 4520
+name = MediaEntry, type=node, file = /j/MediaTracker.java, packageName = java.awt, scope = private, kind = abstract, backgroundColor = darkWhite, lineNumber = 544, numberOfCharacters = 1283
+name = ImageMediaEntry, type=node, file = /j/MediaTracker.java, packageName = java.awt, scope = packagePrivate, kind = class, lineNumber = 607, numberOfCharacters = 678, connectedFrom = "MediaEntry, ImageObserver"
+name = GridBagLayoutInfo, type=node, file = /j/GridBagLayout.java, packageName = java.awt, scope = packagePrivate, kind = class, lineNumber = 24, numberOfCharacters = 429
+name = GridBagLayout, type=node, file = /j/GridBagLayout.java, packageName = java.awt, scope = public, kind = class, lineNumber = 240, numberOfCharacters = 16695, connectedFrom = "LayoutManager"
+name = GridBagConstraints, type=node, file = /j/GridBagConstraints.java, packageName = java.awt, scope = public, kind = class, lineNumber = 29, numberOfCharacters = 1346, connectedFrom = "Cloneable"

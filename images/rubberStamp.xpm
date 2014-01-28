@@ -1,0 +1,38 @@
+#define rubberStamp_chars_per_pixel 1
+#define rubberStamp_format 1
+#define rubberStamp_height 24
+#define rubberStamp_width 24
+#define rubberStamp_ncolors 5
+static char * rubberStamp_colors[] = {
+"+", "none",
+"a", "black",
+"b", "white",
+"c", "blue",
+"d", "cyan",
+};
+static char * rubberStamp_pixels[] = {
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"+++++++++aaaaaa+++++++++",
+"++++++++aaaaaaaa++++++++",
+"++++++++aaaaaaaa++++++++",
+"++++++++aaaaaaaa++++++++",
+"++++++++aaaaaaaa++++++++",
+"+++++++++aaaaaa+++++++++",
+"+++++++++aaaaaa+++++++++",
+"+++++++++aaaaaa+++++++++",
+"+++++++++aaaaaa+++++++++",
+"+++++++++aaaaaa+++++++++",
+"+++++++++aaaaaa+++++++++",
+"+++++++++aaaaaa+++++++++",
+"+++aaaaaaaaaaaaaaaaaa+++",
+"++aaaaaaaaaaaaaaaaaaaa++",
+"++aaaaaaaaaaaaaaaaaaaa++",
+"++aaaaaaaaaaaaaaaaaaaa++",
+"++aaaaaaaaaaaaaaaaaaaa++",
+"++aaaaaaaaaaaaaaaaaaaa++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+};

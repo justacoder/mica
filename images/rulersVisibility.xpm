@@ -1,0 +1,36 @@
+#define rulersVisibility_chars_per_pixel 1
+#define rulersVisibility_format 1
+#define rulersVisibility_height 24
+#define rulersVisibility_width 24
+#define rulersVisibility_ncolors 3
+static char * rulersVisibility_colors[] = {
+"+", "white",
+"a", "black",
+"b", "none",
+};
+static char * rulersVisibility_pixels[] = {
+"bbbbbbbbbbbbbbbbbbbbbbbb",
+"bbbbbbbbbbbbbbbbbbbbbbbb",
+"bbaaaaaaaaaaaaaaaaaaaaab",
+"bba+a+a+a+a+a+a+a+a+a+ab",
+"bba+++a+++a+++a+++a+++ab",
+"bba+++a+++a+++a+++a+++ab",
+"bba+++++++++++++++++++ab",
+"bbaaaaaaaaaaaaaaaaaaaaab",
+"bbabbbbbbbbbbbbbbbbbbbab",
+"bbaaaaaabbbbbbbbbbbbbbab",
+"bba++++abbbbbbbbbbbbbbab",
+"bbaa+++abbbbbbbbbbbbbbab",
+"bba++++abbbbbbbbbbbbbbab",
+"bbaaaa+abbbbbbbbbbbbbbab",
+"bba++++abbbbbbbbbbbbbbab",
+"bbaa+++abbbbbbbbbbbbbbab",
+"bbab+++abbbbbbbbbbbbbbab",
+"bbaaaa+abbbbbbbbbbbbbbab",
+"bba++++abbbbbbbbbbbbbbab",
+"bbaa+++abbbbbbbbbbbbbbab",
+"bba++++abbbbbbbbbbbbbbab",
+"bba++++abbbbbbbbbbbbbbab",
+"bbaaaaaaaaaaaaaaaaaaaaab",
+"bbbbbbbbbbbbbbbbbbbbbbbb",
+};

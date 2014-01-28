@@ -1,0 +1,36 @@
+#define pencil_chars_per_pixel 1
+#define pencil_format 1
+#define pencil_height 24
+#define pencil_width 24
+#define pencil_ncolors 3
+static char * pencil_colors[] = {
+"+", "none",
+"a", "black",
+"b", "cyan",
+};
+static char * pencil_pixels[] = {
+"++++++++++++++++++++++++",
+"+++aa+++++++++++++++++++",
+"+++aba++++++++++++++++++",
+"++aaba++++aa++++++++++++",
+"++abba++aabbaaa+++++++++",
+"++abba+aabbbbbaa++++++++",
+"++aabaaabbaaabba++++++++",
+"+++abbabba+++aba++++++++",
+"+++abaabaa+++aba++++++++",
+"+++aaabba+++aaba++++++++",
+"++++aabba++abbba++++++++",
+"+++++abbbaabbba+++++++++",
+"+++++abbbbbbaaa+++++++++",
+"+++++abbaaaaa+++++++++++",
+"+++++abba+++++++++++++++",
+"+++++abba+++++++++++++++",
+"+++++aabba++++++++aa++++",
+"++++++aabba++++++abba+++",
+"+++++++aabbaaaaaabbba+++",
+"++++++++aabbbbbbbbba++++",
+"++++++++++aaabbbbaa+++++",
+"+++++++++++++aaaaa++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+};

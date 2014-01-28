@@ -1,0 +1,36 @@
+#define connect_chars_per_pixel 1
+#define connect_format 1
+#define connect_height 24
+#define connect_width 24
+#define connect_ncolors 3
+static char * connect_colors[] = {
+"+", "white",
+"a", "black",
+"b", "none",
+};
+static char * connect_pixels[] = {
+"bbbbbbbbbbbbbbbbbbbbbbbb",
+"bbbbbbbbbbbbbbbbbbbbbbbb",
+"bbbbbbbbbbbbbbbbbbbbbbbb",
+"bbbbbbbbbbbbbbbbbbbbbbbb",
+"bbbbbbbbbbbbbbbbbbbbbbbb",
+"bbbbbbbbbbbbbbbbbbbbbbbb",
+"bbbbbbbbbbbbbbbbbbbbbbbb",
+"bbbbbbbbbbbbbbbbbbbbbbbb",
+"bbbbbbbbbbbbbbbbbbbbbbbb",
+"bbaaaaabbbbbbbbbbaaaaabb",
+"bba+++abbbbbbbbbba+++abb",
+"bba+++aaaaaaaaaaaa+++abb",
+"bba+++abbbbbbbbbba+++abb",
+"bbaaaaabbbbbbbbbbaaaaabb",
+"bbbbbbbbbbbbbbbbbbbbbbbb",
+"bbbbbbbbbbbbbbbbbbbbbbbb",
+"bbbbbbbbbbbbbbbbbbbbbbbb",
+"bbbbbbbbbbbbbbbbbbbbbbbb",
+"bbbbbbbbbbbbbbbbbbbbbbbb",
+"bbbbbbbbbbbbbbbbbbbbbbbb",
+"bbbbbbbbbbbbbbbbbbbbbbbb",
+"bbbbbbbbbbbbbbbbbbbbbbbb",
+"bbbbbbbbbbbbbbbbbbbbbbbb",
+"bbbbbbbbbbbbbbbbbbbbbbbb",
+};

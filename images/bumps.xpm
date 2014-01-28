@@ -1,0 +1,22 @@
+#define checkMark_chars_per_pixel 1
+#define checkMark_format 1
+#define checkMark_height 9
+#define checkMark_width 10
+#define checkMark_ncolors 4
+static char * checkMark_colors[] = {
+"n", "none",
+"-", "lightGray",
+".", "white",
+"+", "gray",
+};
+static char * checkMark_pixels[] = {
+"nnnnnnnnnn",
+"n..nnn..nn",
+"n.-+nn.-+n",
+"nn++nnn++n",
+"nnnnnnnnnn",
+"n..nnn..nn",
+"n.-+nn.-+n",
+"nn++nnn++n",
+"nnnnnnnnnn",
+};

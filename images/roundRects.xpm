@@ -1,0 +1,36 @@
+#define roundRects_chars_per_pixel 1
+#define roundRects_format 1
+#define roundRects_height 24
+#define roundRects_width 24
+#define roundRects_ncolors 3
+static char * roundRects_colors[] = {
+"+", "none",
+"a", "black",
+"b", "cyan",
+};
+static char * roundRects_pixels[] = {
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++++++aaaaaaaaaaaa++++++",
+"+++++abbbbbbbbbbbba+++++",
+"++++abbbbbbbbbbbbbba++++",
+"+++abbbbbbbbbbbbbbbba+++",
+"+++abbbbbbbbbbbbbbbba+++",
+"+++abbbbbbbbbbbbbbbba+++",
+"+++abbbbbbbbbbbbbbbba+++",
+"+++abbbbbbbbbbbbbbbba+++",
+"+++abbbbbbbbbbbbbbbba+++",
+"+++abbbbbbbbbbbbbbbba+++",
+"+++abbbbbbbbbbbbbbbba+++",
+"+++abbbbbbbbbbbbbbbba+++",
+"+++abbbbbbbbbbbbbbbba+++",
+"+++abbbbbbbbbbbbbbbba+++",
+"+++abbbbbbbbbbbbbbbba+++",
+"++++abbbbbbbbbbbbbba++++",
+"+++++abbbbbbbbbbbba+++++",
+"++++++aaaaaaaaaaaa++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+};

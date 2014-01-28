@@ -1,0 +1,97 @@
+
+Welcome
+
+	Welcome to Software Farms' suite of open source Java graphics
+	toolkits and applications.
+
+Our Mission
+
+	To make it easy and inexpensive for every programmer to build 
+		extraordinarily graphical user interfaces
+	To make it easy and inexpensive for every user to enjoy
+		extraordinarily graphical user interfaces
+	To facilitate this by distributing a exhaustive set of 
+		common and uncommon, fully customizable, fully functional 
+		graphical applications, tools and widgets. 
+	For free. 
+	For Java. 
+	With source code.
+
+Consulting/Contracting Services
+
+	We are available as consultants to assist you on several different phases of
+	product development, from design consultation to off-site fixed-price contracting.
+
+	To enhance your Mica-programming experience contact Software Farm's 
+	consulting partner Software Federation at http://www.softwarefederation.com.
+
+Our History
+
+	After spending many years enhancing graphics libraries of our clients
+	we decided to write our own. One of the first was PGL (portable graphics
+	library, not to be confused with the later commercial product of the 
+	same name). This was written in 'C' and supported X Windows, SunView and
+	standard PC Graphics cards and included a basic widget toolkit, GUI
+	builder, and windowing system.
+
+	Believing the object-oriented revolution would render well-designed but
+	procedural products useless, a new graphics library was written in C++.
+	This library offered more support for the programmer but relied on the
+	standard toolkit of the day (Motif) and only supported X Windows. This
+	graphics library was actually the front end of a number of application
+	frameworks which were completely configurable using a simple declarative
+	language (similar to XML).
+		
+	The Java arrived and we grabbed the opportunity to port the graphics
+	library to a better programming language and in order to support other
+	platforms. The 'port' turned into a rewrite when we decided to combine
+	features from all of the previous graphics libraries and what we have
+	learned clients want from all of our years of consulting into a 
+	best-of-breed graphics framework. This product is Mica. As for the 
+	configurable application framework... well that is another story...
+
+What is Mica?
+
+	Mica is a 2D, high-level, full-featured, object-oriented, hierarchical, structured, resolution-
+	independent, mixed graphics and user interface widget library with multiple levels of drawing 
+	abstraction written completely in Java
+
+	2D		The system provides extensive support for rendering and
+			manipulation of vector and raster graphics in two dimensions
+
+	High-level	An 'editor object' is provided that supplies much of the
+			functionality associated with 2D drawing programs
+
+	Full-featured	Many graphics shapes, user interface widgets, interactors,
+			and demo applications are included. 
+
+	Object-oriented	All graphics shapes, user interface widgets, interactors,
+			layouts, etc. are objects and sub-classable by the programmer.
+
+	Hierarchical	Graphics shapes and user interface widgets can be arranged in
+			arbitrarily nested container-part and reference-part directed
+			acyclic graphs.
+
+	Structured	Graphics shapes and user interface widgets can be connected
+			together with first-class connection objects into any number 
+			of simultaneously existing undirected (network) graphs.
+
+	Resolution-	The sizes and locations of graphics shapes and user interface
+	independent	widgets are specified in device/resolution-independent floating 
+			point coordinates and so have the same appearance and size
+			regardless of the size or dots-per-inch of the particular screen
+			or printer used for display.
+
+	Mixed graphics	Graphics shapes and user interface widgets share the same screen
+	and UI widgets	real-estate, share the same API and are of the same basic type.
+			
+	Multiple levels	A variety of function/performance options are available from heavy-weight, 
+	of drawing	full-featured graphics shapes to very-light-weight 
+	abstraction	graphics shapes to an immediate rendering mode (in resolution- 
+			independent coordinates).
+
+	Written in Java	The robustness, ease-of-use, portability and the other buzzwords
+			of Java are inherited by this software.
+
+
+

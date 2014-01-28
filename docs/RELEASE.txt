@@ -1,0 +1,69 @@
+
+Software Farm Mica Graphics Framework Release 1.1 (Alpha)
+
+This document describes features unique to this release. Please see
+previous RELEASE*.txt files for more information.
+
+New Mica Graphics Appletcations
+
+	Appletcations are meant to be useful in their own right as well as
+	examples on how Mica can be used.
+
+	MiDiagram:
+
+	There are no new Appletcations this release. However MiDiagram has been
+	significantly enhanced.
+
+New Mica Graphics Examples
+
+	MiExample3		An example of using Mica as a JComponent in a
+				JFC/Swing program
+
+New Mica Widgets
+
+	MiGeneralAttributePanel
+
+New Mica Capabilities
+
+	* Support for JDK 1.1 and above
+	* Support for Swing
+
+	* Reduced the memory footprint to 25% of that of the previous release
+
+	* Almost all editing operations are undoable (except add/remove annotation
+	and conenction points)
+
+	* Annotation point editing dialog
+	* Connection point editing dialog
+
+	* Annotation point toolbar
+	* Connection point toolbar
+
+	* Connection toolbar
+	* Visibility toolbar
+
+	* Z-connections
+	* Arc connections
+
+	* Interactive arc drawing
+
+	* Interactive annotation and connection point add and removal
+
+	* Scale graphics to fit page
+
+	* Splash screen support
+
+	and many, many herds of bugs have been removed.
+
+Known Bugs
+
+	This release was tested on Solaris Sun JDK 1.1.6, 1.2beta2 and 1.2beta4.
+
+	There are a number of rendering bugs in the 1.2beta (image copy - which
+	shows up in double-buffered appliactions and clipping) which hopefully
+	will be fixed by FCS. 1.2beta4 has very slow graphics and Mica repaint
+	problems.
+
+	Save and load does not know how to handle Z-connections or annotation
+	or connections points.
+

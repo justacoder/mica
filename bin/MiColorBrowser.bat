@@ -1,0 +1,2 @@
+call "MiRunApp.bat" MiColorBrowser
+

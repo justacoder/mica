@@ -1,0 +1,36 @@
+#define polygons_chars_per_pixel 1
+#define polygons_format 1
+#define polygons_height 24
+#define polygons_width 24
+#define polygons_ncolors 3
+static char * polygons_colors[] = {
+"+", "none",
+"a", "black",
+"b", "cyan",
+};
+static char * polygons_pixels[] = {
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++++++++aaaaaaaaaaaaa+++",
+"++++++++abbbbbbbbbbba+++",
+"++++++++abbbbbbbbbba++++",
+"++++++++abbbbbbbbbba++++",
+"++++++++abbbbbbbbba+++++",
+"++++++++abbbbbbbbba+++++",
+"++++++++abbbbbbbba++++++",
+"++++++++abbbbbbbba++++++",
+"++++++++abbbbbbba+++++++",
+"++++++++abbbbbbba+++++++",
+"++++++++abbbbbba++++++++",
+"++aaaaaaaaaaaaaa++++++++",
+"++abbbbba+++++++++++++++",
+"++abbbbba+++++++++++++++",
+"+++abbbba+++++++++++++++",
+"++++abbba+++++++++++++++",
+"+++++abba+++++++++++++++",
+"++++++aba+++++++++++++++",
+"+++++++aa+++++++++++++++",
+"++++++++a+++++++++++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+};

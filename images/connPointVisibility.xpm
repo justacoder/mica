@@ -1,0 +1,37 @@
+#define connPointVisibility_chars_per_pixel 1
+#define connPointVisibility_format 1
+#define connPointVisibility_height 24
+#define connPointVisibility_width 24
+#define connPointVisibility_ncolors 4
+static char * connPointVisibility_colors[] = {
+"+", "white",
+"a", "black",
+"b", "none",
+"c", "blue",
+};
+static char * connPointVisibility_pixels[] = {
+"bbbbbbbbbbbbbbbbbbbbbbbb",
+"bcbbbcbbbbbbbbbbbbcbbbcb",
+"bbcbcbbbbbbbbbbbbbbcbcbb",
+"bbbcaaaaaaaaaaaaaaaacbbb",
+"bbcacbbbbbbbbbbbbbbcacbb",
+"bcbabcbbbbbbbbbbbbcbabcb",
+"bbbabbbbbbbbbbbbbbbbabbb",
+"bbbabbbbbbbbbbbbbbbbabbb",
+"bbbabbbbbbbbbbbbbbbbabbb",
+"bbbabbbbbbcbbbcbbbbbabbb",
+"bbbabbbbbbbcbcbbbbbbabbb",
+"bbbabbbbbbbbcbbbbbbbabbb",
+"bbbabbbbbbbcbcbbbbbbabbb",
+"bbbabbbbbbcbbbcbbbbbabbb",
+"bbbabbbbbbbbbbbbbbbbabbb",
+"bbbabbbbbbbbbbbbbbbbabbb",
+"bbbabbbbbbbbbbbbbbbbabbb",
+"bbbabbbbbbbbbbbbbbbbabbb",
+"bcbabcbbbbbbbbbbbbcbabcb",
+"bbcacbbbbbbbbbbbbbbcacbb",
+"bbbcaaaaaaaaaaaaaaaacbbb",
+"bbcbcbbbbbbbbbbbbbbcbcbb",
+"bcbbbcbbbbbbbbbbbbcbbbcb",
+"bbbbbbbbbbbbbbbbbbbbbbbb",
+};

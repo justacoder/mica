@@ -1,0 +1,36 @@
+#define connectFreeForm_chars_per_pixel 1
+#define connectFreeForm_format 1
+#define connectFreeForm_height 24
+#define connectFreeForm_width 24
+#define connectFreeForm_ncolors 3
+static char * connectFreeForm_colors[] = {
+"+", "white",
+"a", "black",
+"b", "none",
+};
+static char * connectFreeForm_pixels[] = {
+"bbbbbbbbbbbbbbbbbbbbbbbb",
+"bbbbbbbbbbbbbbbbbbbbbbbb",
+"bbbbbbbbbbbbbbbbbaaaaabb",
+"bbbbbbbbbbbbbbbbba+++abb",
+"bbbbbbbaaaaaaaaaaa+++abb",
+"bbbbbbaabbbbbbbbba+++abb",
+"bbbbbbabbbbbbbbbbaaaaabb",
+"bbbbbbabaaabbbbbbbbbbbbb",
+"bbbbbbaaabaaaabbbbbbbbbb",
+"bbbbbaabbbbbbbaaabbbbbbb",
+"bbbbaaabbbbbbbbbbaabbbbb",
+"bbbbabbabbbbbbbbbbabbbbb",
+"bbbbabbaaabbbbbbbbabbbbb",
+"bbbbabbbbbaaabbbbbabbbbb",
+"bbbbabbbbbbbbaaaaabbbbbb",
+"bbbbabbbbbbbbbbbbbbbbbbb",
+"bbbbabbbbbbbbbbbbbbbbbbb",
+"bbaaaaabbbbbbbbbbbbbbbbb",
+"bba+++abbbbbbbbbbbbbbbbb",
+"bba+++abbbbbbbbbbbbbbbbb",
+"bba+++abbbbbbbbbbbbbbbbb",
+"bbaaaaabbbbbbbbbbbbbbbbb",
+"bbbbbbbbbbbbbbbbbbbbbbbb",
+"bbbbbbbbbbbbbbbbbbbbbbbb",
+};

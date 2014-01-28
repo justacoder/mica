@@ -1,0 +1,2 @@
+Mi_HOME 	= ${Mi_CURRENT_DIRECTORY}/..
+Mi_IMAGES_HOME 	= ${Mi_HOME}/images

@@ -1,0 +1,16 @@
+
+How to Build Mica
+
+1. Add the 'mica/classes' directory to the CLASSPATH.
+
+2. Change the current directory to mica/com/classes/mica
+
+3. Type 'make'. Note that this is a unix-style makefile
+and that the makefile also uses 'sed', a unix utility.
+At this time we do not have NT-specific, Windows-specific
+or MAC-specific makefiles. However GNU, MKS and other
+organizations provide tools that will provide (hopefully)
+equivalent functionality to the unix 'make' and 'sed'
+tools.
+
+

@@ -1,0 +1,17 @@
+<!Mica-FormattedFile ViewManager = com.swfm.mica.MiPaletteViewManager>
+
+name = document, title = Shapes, type = document, readOnly = false
+
+name = Basic, type = palette, Expand=true
+name = type1, type = node, value = node, container = Basic, editable = true
+name = type2, type = node, value = node, image = ${Mi_HOME}/apps/images/computer.gif, container = Basic, editable = true
+name = type3, type = node, value = node, image = ${Mi_HOME}/apps/images/computer.gif, imageLocation = toLeft, container = Basic, editable = true
+name = type4, type = node, value = node, image = ${Mi_HOME}/apps/images/computer.gif, imageInsideBox = true, container = Basic, editable = true
+name = type5, type = node, value = node, image = ${Mi_HOME}/apps/images/computer.gif, imageLocation = toLeft, imageInsideBox = true, container = Basic, editable = true
+
+name = Templates, type = palette, backgroundColor = white, Expand=true
+name = ttype2, type = node, value = node, decoration = PlaceHolder, container = Templates, editable = true
+name = ttype3, type = node, value = node, decoration = PlaceHolder, imageLocation = toLeft, container = Templates, editable = true
+name = ttype4, type = node, value = node, decoration = PlaceHolder, imageInsideBox = true, container = Templates, editable = true
+name = ttype5, type = node, value = node, decoration = PlaceHolder, imageLocation = toLeft, imageInsideBox = true, container = Templates, editable = true
+

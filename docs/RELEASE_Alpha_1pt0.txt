@@ -1,0 +1,133 @@
+
+Software Farm Mica Graphics Framework Release 1.0 (Alpha)
+
+This document describes features unique to this release. Please see
+previous RELEASE*.txt files for more information.
+
+New Mica Graphics Appletcations
+
+	Appletcations are meant to be useful in their own right as well as
+	examples on how Mica can be used.
+
+	MiClassBrowser:
+
+	MiWidgetBrowser:
+
+	MiDraw:
+
+	MiDiagram:
+
+New Mica Graphics Examples
+
+	MiHelloWorld
+	MiHelloWorld2
+	MiHelloWorld3
+	MiHelloWorld4
+	MiHelloWorld5
+	MiExample
+	MiExample2
+
+New Mica Widgets
+
+	MiSpinButtons
+	MiSpinBox
+	MiYesNoToggleButton
+	MiValidatedTextField
+		MiPhoneNumberTextField
+		MiMaskedTextField
+		MiUpperLowerCaseTextField
+		MiNumericTextField
+		MiEnumeratedTextField
+		MiIntegerTextField
+
+	MiDrawingGrid
+	MiDrawingToolBar
+	MiDrawingPages
+	MiSnapManager
+	MiRuler
+	MiRulerBox
+	MiLayer
+	MiLayerTabs
+	MiDirectoryTreePalette
+
+New Mica Views
+
+	MiAnotherView - in progress
+	MiBirdsEyeView - in progress
+
+New Mica Capabilities
+
+	MiPDFDriver
+	MiPostScriptDriver
+
+Known Bugs
+
+	Connections cannot be detached once they are attached to a node.
+	They must be deleted and new one must be made.
+
+	When a connection moves because one of the nodes they are attached
+	to move, and the connection is selected, pixels are left sitting 
+	around.
+
+	When layers are turned off, they leave a little something behind
+	that should not be there.
+
+	A number of class files have verify errors put there by javac
+	and so Mica will not run as an applet on browsers that check for
+	this type of Error
+
+	Using the ALT+MouseButton1 to simulate a middle mouse button does
+	not seem to work on the two MSWindows 95 1.0.2 JVMs tested (Symantic
+	and Sun) but works fine on Sun's 1.1.5 on MSWindows 95).
+
+	Sun Solaris JDK 1.1.5 AWT Window insets are ennormously incorrect
+	(works fine on MSWindows 95).
+
+	Table headers are out of alignment with table cells by a pixel or so
+
+	Changing the text in MiNetwork cannot be undone using undo
+
+	The performance tests need to be tuned for fast PCs to remove the
+	'infinitely fast' effect (due to the shortness of the tests and the
+	large grained PC timer chip).
+
+	Arranging selected nodes in MiNetwork does not arrange the node's
+	selection graphics at the same time
+
+	Moving table rows in MiPerformanceTestSuite is not handled correctly
+	during successive test runs.
+
+	Cascade menus need work on their look-and-feel
+
+	Appletcations that use table limit the size of their tables for
+	speed (see adding support for virtual data to tables in the 
+	above to do list). For example the file chooser limits itself 
+	to 50 files per directory.
+
+	Sometimes attachments of parts with zero width or height will not 
+	undraw themselves when moved. Work-around: set their width or height 
+	equal to 1.
+
+Development Caveats
+
+	Assigning the same eventHandler instance to multiple parts can have 
+	undesirable side-effects for some types of event handlers.
+
+	If a part has two containers, the first container is the one that is used
+	to determine what window the part is in.
+
+	In event handlers, if the event handler is waiting for a shift-mouse-up event
+	then it must also look for mouse-up event too because a user may let up the
+	shift key then the mouse button. To fix: use the ANY_MODIFIERS_HELD_DOWN option
+	to look for the mouse-button-up with any or none modifiers held down.
+
+	If a text string is to be composed of 2 strings (for example: 
+	string1 + ":" + string2), make sure to call getProperty if either of these
+	text strings might be a property name (for example:
+	MiSystem.getProperty(string1, string1) + ":" 
+	+ MiSystem.getProperty(string2, string2)).
+
+	If a drag and drop operation replaces the drop target then there
+	is only one way for observers to be notified about the completion
+	of the drag and drop operation: by listening for the Mi_REPLACE_ACTION.
+

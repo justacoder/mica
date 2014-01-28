@@ -1,0 +1,1 @@
+java -noasyncgc -noclassgc MiPerformanceTestSuite -file main.perf

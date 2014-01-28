@@ -1,0 +1,13 @@
+#define	MiCoordType		double
+#define	MiDeviceCoordType	int
+#define	MiCoordBuiltInType	Double
+#define	MiCoord			double
+#define	MiDistanceUnits		__mica_distance_units
+#define	MiDistance		double
+#define	__mica_distance_units	MiDistanceUnits
+#define	MiDeviceCoord		int
+#define	MiDeviceDistance	int
+#define ----------------------------------------------------------------------------------------------
+#define ------------------------------------------------------
+
+

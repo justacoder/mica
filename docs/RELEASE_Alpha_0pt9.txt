@@ -1,0 +1,224 @@
+
+Software Farm Mica Graphics Framework Release 0.9
+
+Mica
+
+	Announcing release 0.9 of Mica. Mica is a modern object-oriented
+	2D graphics library with a heavy emphasis on ease of use, 
+	portability and the ability to mix common user-interface widgets 
+	with not so common widgets and graphs.
+	
+	Mica is available on the web for general evaluation and use. 
+	The source code and class files are provided free of charge.
+
+Release 0.9
+
+	This is an Alpha Release
+
+	What is an Alpha Release? It means that any part of the API, any
+	constant, any class may be changed, added or removed in order to
+	improve the overall design and construction of the system. It also
+	means that there may indeed be bug parties lurking in the code.
+
+	Target Platform
+
+	The target is all Java platforms. This has been extensively tested on
+	a Sun Ultra 1/140 running Solaris 5.5 using JDK 1.02. This has not
+	been extensively tested on MS Windows and not at all on McIntosh or 
+	Linux. It seems to run OK on Sun Solaris JDK 1.2beta2 and Sun MSWindows
+	95 JDK versions 1.0.2 (Java workshop version) and 1.1.5 as well.
+
+	Development Platform
+
+	This was developed on a Sun Ultra 1/140 workstation on JDK 1.02. 
+	The code was edited on a screen ~110 chars wide and so long 
+	variable names, method names, lines of code are prevalent throughout 
+	the source code. Unix makefiles and utilities are used to build Mica.
+
+The Current Mica Graphics Appletcation Suite
+
+	Appletcations are meant to be useful in their own right as well as
+	examples on how Mica can be used.
+
+	MiColorBrowser:
+
+	MiColorBrowser is a tool that displays a number of color 
+	combinations including the display of the standard 16 colors 
+	defined in java.awt.Color, the 35 or so named Mica colors, and
+	the 216 browser-safe colors.
+
+	MiFontBrowser:
+
+	MiFontBrowser is a tool that displays the Java system fonts
+	in all styles and various sizes.
+
+	MiNetwork:
+
+	MiNetwork is a graphics editor that provides means to create, edit, 
+	save and load graphs of many different kinds. It uses a simple ASCII
+	text file to save and load from which is documented in 
+	MiGraphicsFileFormat.txt.
+
+	MakeClassHierarchyGraphicsFile:
+
+	MakeClassHierarchyGraphicsFile is a command line utility that will
+	generate graphics files from directories of Java source code files
+	suitable for viewing in MiNetwork.
+
+	MiImageBrowser:
+
+	MiImageBrowser is a tool that allows the viewing and examination of
+	any GIF, JPG or XPM file or files.
+
+	MiLife:
+
+	MiLife is an entertainment program that allows one to specify 
+	cell-based rewrite rules and animate the results.
+
+	MiPerformanceTestSuite:
+
+	MiPerformanceTestSuite is a suite of performance and other types 
+	of tests which generates a table of user-browsable results.
+
+Documentation
+
+	LICENSE.txt	- The Mica Graphics Framework License
+	README.txt	- About the Mica Graphics Framework
+	RELEASE.txt	- This file
+	SOFTWAREFARM.txt- Us and our mission
+
+	In the .docs directory
+
+		technical.ps	- The technical overview of Mica in postscript
+		technical.pdf	- The technical overview of Mica in Adobe pdf file format
+		technical.html	- The technical overview of Mica in HTML
+		javadocs	- The subdirectory containing html for the Mica method and class headers
+
+To Do
+
+	This is a summary of the features we plan on adding in the near
+	future. However, your feedback will help prioritize and refine
+	this list.
+
+	Comments and headers need to be added to all remaining classes.
+
+	Common graphics toolkit features (that are not yet implemented
+	do to AWT 1.02 limitations):
+
+		Line styles (dashed, dash-dot, etc.)
+		Rotated text
+		Pattern filled polygons and ovals
+
+	Common user-interface toolkit features:
+
+		Grids
+		Print setup/preview - all items/selected items/selected area
+		Rulers
+		SnapGrids
+		SpinBoxs
+		Splitters
+		TextAreas
+
+	Uncommon user-interface toolkit features:
+
+		Clocks (analog, digital - interactively changeable)
+		Radial menus
+		Various meter widgets (interactively changeable)
+		Calendars (interactively changeable)
+		PieCharts (interactively changeable)
+		Various plotting widgets ((interactively changeable)
+		Various charting widgets ((interactively changeable)
+		Line routing layouts
+		Multiple views (birds-eye, lens)
+		Wizard Managers, WorkFlow Managers
+
+	Common standards:
+
+		Printer output
+		The system clip board
+
+	Enhancements:
+
+		Add a 'virtual data' option for MiTable (and therefore MiList
+		and MiTreeList) to support arbitrarily large data sets.
+
+		Finish adding named properties to all shapesd, layouts and widgets.
+
+		Finish the 'prototype-based' creation pattern for all widgets
+		(only MiPushButton in finished at this time).
+
+		Finish adding automatic attribute value propagation down the 
+		container-part hierarchy (inheritance and overrides).
+
+		Make some better icons...
+
+	Appletcations:
+
+		MiDraw (a drawing editor)
+		MiDiagram (a network and drawing editor combined)
+		MiDocument (a document editor)
+		
+		<Vertical Applications> (We have identified over 50 vertical
+		applications that could, and should, be graphical in nature.
+
+Known Bugs
+
+	A number of class files have verify errors put there by javac
+	and so Mica will not run as an applet on browsers that check for
+	this type of Error
+
+	Using the ALT+MouseButton1 to simulate a middle mouse button does
+	not seem to work on the two MSWindows 95 1.0.2 JVMs tested (Symantic
+	and Sun) but works fine on Sun's 1.1.5 on MSWindows 95).
+
+	Sun Solaris JDK 1.1.5 AWT Window insets are ennormously incorrect
+	(works fine on MSWindows 95).
+
+	Table headers are out of alignment with table cells by a pixel or so
+
+	Changing the text in MiNetwork cannot be undone using undo
+
+	The performance tests need to be tuned for fast PCs to remove the
+	'infinitely fast' effect (due to the shortness of the tests and the
+	large grained PC timer chip).
+
+	Arranging selected nodes in MiNetwork deos not arrange the node's
+	selection graphics at the same time
+
+	Moving table rows in MiPerformanceTestSuite is not handled correctly
+	during successive test runs.
+
+	Cascade menus need work on their look-and-feel
+
+	Appletcations that use table limit the size of their tables for
+	speed (see adding support for virtual data to tables in the 
+	above to do list). For example the file chooser limits itself 
+	to 50 files per directory.
+
+	Sometimes attachments of parts with zero width or height will not 
+	undraw themselves when moved. Work-around: set their width or height 
+	equal to 1.
+
+Caveats
+
+	Assigning the same eventHandler instance to multiple parts can have 
+	undesirable side-effects for some types of event handlers.
+
+	If a part has two containers, the first container is the one that is used
+	to determine what window the part is in.
+
+	In event handlers, if the event handler is waiting for a shift-mouse-up event
+	then it must also look for mouse-up event too because a user may let up the
+	shift key then the mouse button. To fix: use the ANY_MODIFIERS_HELD_DOWN option
+	to look for the mouse-button-up with any or none modifiers held down.
+
+	If a text string is to be composed of 2 strings (for example: 
+	string1 + ":" + string2), make sure to call getProperty if either of these
+	text strings might be a property name (for example:
+	MiSystem.getProperty(string1, string1) + ":" 
+	+ MiSystem.getProperty(string2, string2)).
+
+	If a drag and drop operation replaces the drop target then there
+	is only one way for observers to be notified about the completion
+	of the drag and drop operation: by listening for the Mi_REPLACE_ACTION.
+

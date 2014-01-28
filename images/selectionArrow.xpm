@@ -1,0 +1,37 @@
+#define selectionArrow_chars_per_pixel 1
+#define selectionArrow_format 1
+#define selectionArrow_height 24
+#define selectionArrow_width 24
+#define selectionArrow_ncolors 4
+static char * selectionArrow_colors[] = {
+"+", "none",
+"a", "black",
+"b", "white",
+"c", "blue",
+};
+static char * selectionArrow_pixels[] = {
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++++a+++++++++++++++++++",
+"++++aa++++++++++++++++++",
+"++++aaa+++++++++++++++++",
+"++++aaaa++++++++++++++++",
+"++++aaaaa+++++++++++++++",
+"++++aaaaaa++++++++++++++",
+"++++aaaaaaa+++++++++++++",
+"++++aaaaaaaa++++++++++++",
+"++++aaaaaaaaa+++++++++++",
+"++++aaaaaaaaaa++++++++++",
+"++++aaaaaaa+++++++++++++",
+"++++aaa+aaa+++++++++++++",
+"++++aa+++aaa++++++++++++",
+"++++a++++aaa++++++++++++",
+"++++++++++aa++++++++++++",
+"++++++++++aaa+++++++++++",
+"+++++++++++aa+++++++++++",
+"++++++++++++a+++++++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+"++++++++++++++++++++++++",
+};

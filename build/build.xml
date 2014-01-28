@@ -1,0 +1,290 @@
+
+<!--
+
+
+                       S o f t w a r e   F a r m
+
+
+
+                                M i c a
+
+                   G r a p h i c s    F r a m e w o r k
+
+
+
+-->
+
+
+<project default="help" basedir=".">
+
+	<!-- ***************************************************
+	<		Help
+	< *************************************************** -->
+
+	<target name="help">
+		<echo message=""/>
+		<echo message="build [all | release | mica | examples | apps]"/>
+		<echo message=""/>
+		<echo message=""/>
+		<echo message="Copyright (c) 2001, Software Farm, Inc."/>
+	</target>
+
+
+
+	<!-- ***************************************************
+	<		Initialize
+	< *************************************************** -->
+
+	<target name="init">
+		<property name="src" 			value="../src" />
+		<property name="lib"  			value="../lib" />
+		<property name="classes" 		value="../classes" />
+		<property name="apps" 			value="../apps" />
+		<property name="examples" 		value="../examples" />
+		<property name="applets" 		value="../applets" />
+		<property name="images" 		value="../images" />
+		<property name="releases" 		value="../../releases" />
+		<property name="tmp" 			value="../tmp" />
+		<property name="javadocs" 		value="../docs/javadocs" />
+		<property name="debug" 			value="on" />
+		<property name="build.compiler" 	value="jikes" />
+<!--		<property name="build.compiler" 	value="modern" />  -->
+		<taskdef name="preprocessor" 		classname="com.swfm.mica.util.AntPreprocessor"
+							classpath="${MICA_HOME}/lib/preprocessor.jar" />
+		<tstamp/>
+	</target>
+
+	<path id="xml-libs-classpath">
+		<fileset dir="${JAXP_HOME}">
+			<include name="crimson.jar"/>
+			<include name="jaxp.jar"/>
+		</fileset>
+	</path>
+	<path id="libs-classpath">
+		<fileset dir="${MICA_HOME}/lib">
+			<include name="*.jar"/>
+		</fileset>
+	</path>
+	<path id="applet-libs-classpath">
+		<fileset dir="${MICA_HOME}/lib">
+			<include name="*.jar"/>
+		</fileset>
+		<fileset dir="${MICA_HOME}/applets">
+			<include name="*.jar"/>
+		</fileset>
+	</path>
+
+
+	<!-- ***************************************************
+	<		Preprocess Mica
+	< *************************************************** -->
+
+	<target name="preprocess-mica" depends="init">
+		<mkdir dir="${tmp}/com/swfm/mica"/>
+		<preprocessor todir="${tmp}/com/swfm/mica" flatten="true" classname="com.swfm.mica.util.AntCppPreprocessor" arguments="-f ${MICA_HOME}/build/defines.mica">
+			<fileset dir="${src}">
+				<include name="**/*.java"/>
+				<exclude name="**/util/*.java"/>
+			</fileset>
+		</preprocessor>
+		<mkdir dir="${tmp}/com/swfm/mica/util"/>
+		<preprocessor todir="${tmp}/com/swfm/mica/util" flatten="true" classname="com.swfm.mica.util.AntCppPreprocessor" arguments="-f ${MICA_HOME}/build/defines.mica">
+			<fileset dir="${src}">
+				<include name="**/util/*.java"/>
+			</fileset>
+		</preprocessor>
+	</target>
+
+	<!-- ***************************************************
+	<		Compile Mica
+	< *************************************************** -->
+
+	<target name="compile-mica" depends="preprocess-mica">
+		<mkdir dir="${classes}"/>
+		<javac srcdir="${tmp}" destdir="${classes}" debug="${debug}">
+			<include name="com/**/*.java"/>
+			<classpath>
+				<pathelement location="${tmp}" />
+				<path refid="libs-classpath"/>
+				<path refid="xml-libs-classpath"/>
+			</classpath>
+		</javac>
+	</target>
+
+	<!-- ***************************************************
+	<		Jar Mica
+	< *************************************************** -->
+
+	<target name="jar-mica-required">
+		<uptodate property="jar-mica.notRequired" targetfile="${lib}\mica.jar" >
+			<srcfiles dir= "${classes}" includes="**"/>
+		</uptodate>
+	</target>
+	
+	<target name="jar-mica" depends="compile-mica, jar-mica-required" unless="jar-mica.notRequired">
+		<delete file="${lib}/mica.jar"/>
+		<jar jarfile="${lib}/mica.jar">
+			<fileset dir="${classes}">
+				<include name="**"/>
+			</fileset>
+		</jar>
+	</target>
+
+	<!-- ***************************************************
+	<		Build Mica Applications
+	< *************************************************** -->
+
+	<target name="preprocess-apps" depends="jar-mica">
+		<mkdir dir="${tmp}/apps"/>
+		<preprocessor todir="${tmp}/apps" flatten="true" classname="com.swfm.mica.util.AntCppPreprocessor" arguments="-f ${MICA_HOME}/build/defines.mica">
+			<fileset dir="${apps}">
+				<include name="**/*.java"/>
+			</fileset>
+		</preprocessor>
+	</target>
+
+	<target name="compile-apps" depends="preprocess-apps">
+		<javac srcdir="${tmp}/apps" destdir="${apps}" debug="${debug}">
+			<classpath>
+				<path refid="libs-classpath"/>
+				<pathelement location="${tmp}/apps" />
+			</classpath>
+		</javac>
+	</target>
+
+
+	<!-- ***************************************************
+	<		Build Mica Images Jar
+	< *************************************************** -->
+	<target name="jar-images-required">
+		<uptodate property="jar-images.notRequired" targetfile="${lib}\images.jar" >
+			<srcfiles dir= "${images}" includes="**"/>
+		</uptodate>
+	</target>
+	
+	<target name="jar-images" depends="init, jar-images-required" unless="jar-images.notRequired">
+		<delete file="${lib}/images.jar"/>
+		<jar jarfile="${lib}/images.jar">
+			<fileset dir="../">
+				<include name="images/**"/>
+			</fileset>
+		</jar>
+	</target>
+
+	<!-- ***************************************************
+	<		Build Mica Examples
+	< *************************************************** -->
+	<target name="preprocess-examples" depends="jar-mica">
+		<mkdir dir="${tmp}/examples"/>
+		<preprocessor todir="${tmp}/examples" flatten="true" classname="com.swfm.mica.util.AntCppPreprocessor" arguments="-f ${MICA_HOME}/build/defines.mica">
+			<fileset dir="${examples}">
+				<include name="**/*.java"/>
+			</fileset>
+		</preprocessor>
+	</target>
+
+	<target name="compile-examples" depends="preprocess-examples">
+		<javac srcdir="${tmp}/examples" destdir="${MICA_HOME}" debug="${debug}">
+			<include name="**/*.java" />
+			<classpath>
+				<path refid="libs-classpath"/>
+				<pathelement location="${tmp}/examples" />
+			</classpath>
+		</javac>
+	</target>
+
+	<!-- ***************************************************
+	<		Build Mica Applets
+	< *************************************************** -->
+	<target name="preprocess-applets" depends="init">
+		<mkdir dir="${tmp}/applets"/>
+		<preprocessor todir="${tmp}/applets" flatten="true" classname="com.swfm.mica.util.AntCppPreprocessor" arguments="-f ${MICA_HOME}/build/defines.mica">
+			<fileset dir="${applets}">
+				<include name="**/*.java"/>
+			</fileset>
+		</preprocessor>
+	</target>
+
+	<target name="compile-applets" depends="preprocess-applets">
+		<javac srcdir="${tmp}/applets" destdir="${MICA_HOME}" debug="${debug}">
+			<include name="**/*.java" />
+			<classpath>
+				<path refid="applet-libs-classpath"/>
+				<pathelement location="${tmp}/applets" />
+			</classpath>
+		</javac>
+		<move file="${MICA_HOME}/DiagramApplet.class" tofile="${applets}/DiagramApplet.class" />
+	</target>
+
+	<!-- ***************************************************
+	<		Generate Mica Javadocs
+	< *************************************************** -->
+	<target name="generate-javadocs" depends="compile-mica">
+		<delete dir="${javadocs}"/>
+		<mkdir dir="${javadocs}"/>
+		<exec executable="javadoc" failonerror="true">
+			<arg value="-J-ms32m"/>
+			<arg value="-J-mx64m"/>
+			<arg value="-version"/>
+			<arg value="-author"/>
+			<arg value="-public"/>
+			<arg line="-classpath ../com"/>
+			<arg line="-sourcepath ../tmp"/>
+			<arg line="-d ${javadocs}"/>
+			<arg value="com.swfm.mica"/>
+		</exec>
+	</target>
+
+	<!-- ***************************************************
+	<		Release Mica
+	< *************************************************** -->
+	<target name="release-mica" depends="init">
+		<delete dir="${releases}/mica-${DSTAMP}"/>
+		<mkdir dir="${releases}/mica-${DSTAMP}"/>
+		<copy todir="${releases}/mica-${DSTAMP}">
+			<fileset dir="${MICA_HOME}">
+				<include name="**/*"/>
+			</fileset>
+		</copy>
+		<delete dir="${releases}/mica-${DSTAMP}/tmp"/>
+		<delete dir="${releases}/mica-${DSTAMP}/classes"/>
+	</target>
+
+
+	<!-- ***************************************************
+	<		Clean Mica
+	< *************************************************** -->
+	<target name="clean" depends="init">
+		<delete dir="${classes}"/>
+		<mkdir dir="${classes}"/>
+		<delete dir="${tmp}"/>
+		<mkdir dir="${tmp}"/>
+		<delete file="${lib}/mica.jar"/>
+		<delete file="${lib}/images.jar"/>
+	</target>
+
+	<!-- ***************************************************
+	<		Major Build Functions
+	< *************************************************** -->
+
+	<target name="all" depends="compile-apps, compile-examples, compile-applets, jar-mica, jar-images">
+	</target>
+
+	<target name="release" depends="all, javadocs, release-mica">
+	</target>
+
+	<target name="mica" depends="compile-mica">
+	</target>
+
+	<target name="apps" depends="compile-apps">
+	</target>
+
+	<target name="examples" depends="compile-examples">
+	</target>
+
+	<target name="javadocs" depends="generate-javadocs">
+	</target>
+
+
+</project>
+

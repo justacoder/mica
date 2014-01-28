@@ -1,0 +1,37 @@
+#define annoPointVisibility_chars_per_pixel 1
+#define annoPointVisibility_format 1
+#define annoPointVisibility_height 24
+#define annoPointVisibility_width 24
+#define annoPointVisibility_ncolors 4
+static char * annoPointVisibility_colors[] = {
+"+", "white",
+"a", "black",
+"b", "none",
+"c", "green",
+};
+static char * annoPointVisibility_pixels[] = {
+"bbbbbbbbbbbbbbbbbbbbbbbb",
+"bbbbbbbbbccccccbbbbbbbbb",
+"bbbbbbbbbcbbbbcbbbbbbbbb",
+"bbbaaaaaacaaaacaaaaaabbb",
+"bbbabbbbbcbbbbcbbbbbabbb",
+"bbbabbbbbccccccbbbbbabbb",
+"bbbabbbbbbbbbbbbbbbbabbb",
+"bbbabbbbbbbbbbbbbbbbabbb",
+"bbbabbbbbbbbbbbbbbbbabbb",
+"bbbabbbbbbbbbbbbbbbbabbb",
+"bcccccbbbccccccbbbcccccb",
+"bcbabcbbbcbbbbcbbbcbabcb",
+"bcbabcbbbcbbbbcbbbcbabcb",
+"bcbabcbbbcbbbbcbbbcbabcb",
+"bcccccbbbccccccbbbcccccb",
+"bbbabbbbbbbbbbbbbbbbabbb",
+"bbbabbbbbbbbbbbbbbbbabbb",
+"bbbabbbbbbbbbbbbbbbbabbb",
+"bbbabbbbbccccccbbbbbabbb",
+"bbbabbbbbcbbbbcbbbbbabbb",
+"bbbaaaaaacaaaacaaaaaabbb",
+"bbbbbbbbbcbbbbcbbbbbbbbb",
+"bbbbbbbbbccccccbbbbbbbbb",
+"bbbbbbbbbbbbbbbbbbbbbbbb",
+};
