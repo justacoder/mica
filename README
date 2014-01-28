@@ -35,5 +35,7 @@ Written in Java
 The robustness, ease-of-use, portability and the other buzzwords of Java are inherited by this software.
 
 
+The source code was last updated in 2004. A very full-featured ECAD package was the last application written on this. It is quite robust, and exceeds Swing and GED in functionality (last I checked), but I am not able to offer much support at this time.
+
 More information is at: http://gui.net/swfm/mica-classic/index.htm
 
