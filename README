@@ -1,0 +1,38 @@
+
+
+Mica: Java Object-Oriented 2D Vector Graphics and User Interface Framework. Includes diagramming and network graphics editors. 
+ 
+ 
+Mica is a 2D, high-level, full-featured, object-oriented, hierarchical, structured, resolution-independent, mixed graphics and user interface widget library with multiple levels of drawing abstraction written completely in Java.
+2D
+The system provides extensive support for rendering and manipulation of vector and raster graphics in two dimensions
+
+High-level
+A highly-customizable 'Graphics Window Object' is provided that supplies much of the functionality associated with 2D drawing programs. A Graphics Object Model is also provided that abstracts general node-link data structures.
+
+Full-featured
+Many graphics shapes, user interface widgets, interactors, and demo applications are included.
+
+Object-oriented
+All graphics shapes, user interface widgets, interactors, layouts, connections, etc. are objects and sub-classable by the programmer.
+
+Hierarchical
+Graphics shapes and user interface widgets can be arbitrarily arranged in container-part and reference-part directed acyclic graphs.
+
+Structured
+Graphics shapes and user interface widgets can be connected together with first-class connection objects into any number of directed or undirected (network) graphs.
+
+Resolution-independent
+The sizes and locations of graphics shapes and user interface independent widgets are specified in device-resolution-independent floating point coordinates and so have the same appearance and relative size regardless of the size or dots-per-inch of the particular screen or printer used for display.
+
+Mixed graphics
+Graphics shapes and user interface widgets share the same coordinate space, the same API and are of the same basic type.
+
+Multiple levels
+A variety of functionality/performance trade-off options are available from heavy-weight, full-featured graphics shapes to very-light-weight simple graphics shapes to an immediate rendering mode (in resolution-independent coordinates).
+
+Written in Java
+The robustness, ease-of-use, portability and the other buzzwords of Java are inherited by this software.
+
+
+
