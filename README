@@ -17,7 +17,7 @@ Object-oriented
 All graphics shapes, user interface widgets, interactors, layouts, connections, etc. are objects and sub-classable by the programmer.
 
 Hierarchical
-Graphics shapes and user interface widgets can be arbitrarily arranged in container-part and reference-part directed acyclic graphs.
+Graphics shapes and user interface widgets can be arbitrarily arranged in container-part and reference-part directed acyclic scene graphs.
 
 Structured
 Graphics shapes and user interface widgets can be connected together with first-class connection objects into any number of directed or undirected (network) graphs.
